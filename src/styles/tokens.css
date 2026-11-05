@@ -1,0 +1,49 @@
+/* Badiu Digital — design tokens */
+:root {
+  /* Paleta Petróleo */
+  --badiu-petrol: #0D4B57;
+  --badiu-petrol-deep: #0A3F49;
+  --badiu-ink: #061F25;
+  --badiu-ink-text: #082F37;
+  --badiu-sand: #F1E4C3;
+  --badiu-sand-light: #F7F0E0;
+  --badiu-orange: #F08A4B;
+  --badiu-muted: #BFD3CF;
+  --badiu-muted-2: #9FB9B6;
+  --badiu-line: #1C4A52;
+  --badiu-success: #5CC88C;
+
+  /* Utilitários de tema */
+  --badiu-kbd-bg: rgba(6, 31, 37, 0.5);
+  --badiu-tile-hover: #11535F;
+
+  /* Tipografia */
+  --badiu-font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --badiu-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Movimento */
+  --badiu-ease-out: cubic-bezier(.2, .9, .2, 1);
+  --badiu-ease-in-out: cubic-bezier(.7, 0, .2, 1);
+  --badiu-wipe-ms: 550ms;
+
+  /* Layout */
+  --badiu-container: 1280px;
+  --badiu-radius-lg: 32px;
+  --badiu-radius-md: 24px;
+}
+
+/* ---------- Tema claro ---------- */
+html[data-theme="light"] {
+  --badiu-ink:         #F5EDD8;   /* fundo → areia quente clara */
+  --badiu-petrol:      #FFFFFF;   /* superfícies → branco */
+  --badiu-petrol-deep: #F5F4F0;   /* superfícies profundas → branco quente */
+  --badiu-sand:        #061F25;   /* texto principal → tinta escura */
+  --badiu-sand-light:  #FFFFFF;   /* superfícies de cartão → branco */
+  --badiu-muted:       #2D6B77;   /* texto auxiliar → petróleo legível em fundo claro */
+  --badiu-muted-2:     #3A5F67;   /* texto muito auxiliar */
+  --badiu-line:        #E2DDD4;   /* bordas → quente suave */
+
+  /* Utilitários de tema (light) */
+  --badiu-kbd-bg: rgba(13, 75, 87, 0.08);
+  --badiu-tile-hover: #F0ECE3;
+}

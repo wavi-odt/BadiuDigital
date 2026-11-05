@@ -15,6 +15,7 @@ export default function BottomNav() {
   const ITEMS = [
     { to: ROUTES.home,     label: t('nav.home')     },
     { to: ROUTES.projects, label: t('nav.projects') },
+    { to: ROUTES.services, label: t('nav.services') },
     { to: ROUTES.team,     label: t('nav.team')     },
     { to: ROUTES.contact,  label: t('nav.contact')  },
   ];

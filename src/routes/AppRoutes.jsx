@@ -5,6 +5,7 @@ import ProjectsPage from '@/pages/public/ProjectsPage';
 import ProjectPage from '@/pages/public/ProjectPage';
 import TeamPage from '@/pages/public/TeamPage';
 import MemberPage from '@/pages/public/MemberPage';
+import ServicesPage from '@/pages/public/ServicesPage';
 import ContactPage from '@/pages/public/ContactPage';
 import NotFoundPage from '@/pages/public/NotFoundPage';
 
@@ -15,6 +16,7 @@ export default function AppRoutes() {
         <Route index element={<HomePage />} />
         <Route path="projetos" element={<ProjectsPage />} />
         <Route path="projetos/:slug" element={<ProjectPage />} />
+        <Route path="servicos" element={<ServicesPage />} />
         <Route path="equipa" element={<TeamPage />} />
         <Route path="equipa/:slug" element={<MemberPage />} />
         <Route path="contacto" element={<ContactPage />} />

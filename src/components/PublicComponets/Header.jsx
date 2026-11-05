@@ -28,6 +28,7 @@ export default function Header({ tone = 'dark' }) {
 
   const NAV = [
     { to: ROUTES.projects, label: t('nav.projects') },
+    { to: ROUTES.services, label: t('nav.services') },
     { to: ROUTES.team,     label: t('nav.team')     },
   ];
 

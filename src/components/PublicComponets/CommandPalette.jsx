@@ -127,6 +127,7 @@ export default function CommandPalette() {
   const PAGES = [
     { id: 'page-home',     label: t('nav.home'),     sub: t('palette.home_sub'),     to: ROUTES.home },
     { id: 'page-projects', label: t('nav.projects'), sub: t('palette.projects_sub'), to: ROUTES.projects },
+    { id: 'page-services', label: t('nav.services'), sub: t('services.palette_sub'), to: ROUTES.services },
     { id: 'page-team',     label: t('nav.team'),     sub: t('palette.team_sub'),     to: ROUTES.team },
     { id: 'page-contact',  label: t('nav.contact'),  sub: t('palette.contact_sub'),  to: ROUTES.contact },
   ];

@@ -1,9 +1,52 @@
 {
+  "footer": {
+    "nav": "Navegação",
+    "services": "Serviços"
+  },
   "nav": {
     "home": "Início",
     "projects": "Projetos",
+    "services": "Serviços",
     "team": "Equipa",
     "contact": "Contacto"
+  },
+  "services": {
+    "heading": "O que fazemos.",
+    "description": "Construímos produtos digitais de raiz — desde a identidade visual à infraestrutura.",
+    "contact_cta": "Começar um projeto →",
+    "palette_sub": "O que fazemos",
+    "what_includes": "O que inclui",
+    "toggle_open": "Ver detalhes",
+    "toggle_close": "Fechar",
+    "recent_work": "Trabalho recente",
+    "see_all_projects": "Ver todos os projetos →",
+    "stat_headline": "1 estúdio.\nTudo incluído.",
+    "stat_sub": "Design, código e infraestrutura. Sem intermediários, sem surpresas."
+  },
+  "process": {
+    "eyebrow": "Processo",
+    "heading": "Como trabalhamos.",
+    "step_01_title": "Briefing",
+    "step_01_desc": "Ouvimos. Percebemos o negócio, o contexto e os objetivos antes de escrever uma linha de código.",
+    "step_02_title": "Design",
+    "step_02_desc": "Construímos protótipos visuais de alta fidelidade. Cada decisão tem uma razão.",
+    "step_03_title": "Desenvolvimento",
+    "step_03_desc": "Código limpo, semântico e performativo. Sem frameworks desnecessárias, sem atalhos.",
+    "step_04_title": "Lançamento",
+    "step_04_desc": "Deploy, testes finais e acompanhamento pós-lançamento. Ficamos ao lado até tudo funcionar."
+  },
+  "why": {
+    "eyebrow": "Porquê o Badiu",
+    "heading": "Um estúdio diferente.",
+    "item_01_stat": "→ 1 equipa",
+    "item_01_title": "Sem intermediários.",
+    "item_01_desc": "Falas diretamente com quem desenha e escreve o código. Sem account managers, sem telefones estragados.",
+    "item_02_stat": "Full-stack",
+    "item_02_title": "Do logo ao servidor.",
+    "item_02_desc": "Marca, interface, frontend, backend — tudo sai do mesmo estúdio. Sem depender de fornecedores externos.",
+    "item_03_stat": "🌍",
+    "item_03_title": "Cabo Verde → Mundo.",
+    "item_03_desc": "Raízes locais, padrões internacionais. Já entregámos para clientes em 3 continentes."
   },
   "home": {
     "scroll_hint": "Faz scroll para entrar",
@@ -98,6 +141,7 @@
     "main_nav": "Navegação principal",
     "page_phases": "Fases da página",
     "filter_by_status": "Filtrar por estado",
+    "filter_by_tag": "Filtrar por tecnologia",
     "photo_placeholder": "[foto]",
     "project_cover_alt": "Capa do projeto {{name}}",
     "tagline_suffix": "Software com raízes",

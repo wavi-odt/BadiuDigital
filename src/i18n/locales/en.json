@@ -1,9 +1,52 @@
 {
+  "footer": {
+    "nav": "Navigation",
+    "services": "Services"
+  },
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "services": "Services",
     "team": "Team",
     "contact": "Contact"
+  },
+  "services": {
+    "heading": "What we do.",
+    "description": "We build digital products from scratch — from visual identity to infrastructure.",
+    "contact_cta": "Start a project →",
+    "palette_sub": "What we do",
+    "what_includes": "What's included",
+    "toggle_open": "See details",
+    "toggle_close": "Close",
+    "recent_work": "Recent work",
+    "see_all_projects": "See all projects →",
+    "stat_headline": "1 studio.\nAll included.",
+    "stat_sub": "Design, code and infrastructure. No middlemen, no surprises."
+  },
+  "process": {
+    "eyebrow": "Process",
+    "heading": "How we work.",
+    "step_01_title": "Briefing",
+    "step_01_desc": "We listen. We understand the business, context and goals before writing a single line of code.",
+    "step_02_title": "Design",
+    "step_02_desc": "High-fidelity visual prototypes. Every decision has a reason behind it.",
+    "step_03_title": "Build",
+    "step_03_desc": "Clean, semantic and performant code. No unnecessary frameworks, no shortcuts.",
+    "step_04_title": "Launch",
+    "step_04_desc": "Deploy, final testing and post-launch support. We stay by your side until everything works."
+  },
+  "why": {
+    "eyebrow": "Why Badiu",
+    "heading": "A different studio.",
+    "item_01_stat": "→ 1 team",
+    "item_01_title": "No middlemen.",
+    "item_01_desc": "You talk directly with the people who design and write the code. No account managers, no broken telephone.",
+    "item_02_stat": "Full-stack",
+    "item_02_title": "From logo to server.",
+    "item_02_desc": "Brand, interface, frontend, backend — everything from the same studio. No dependency on external vendors.",
+    "item_03_stat": "🌍",
+    "item_03_title": "Cape Verde → World.",
+    "item_03_desc": "Local roots, international standards. We've delivered for clients across 3 continents."
   },
   "home": {
     "scroll_hint": "Scroll to explore",
@@ -98,6 +141,7 @@
     "main_nav": "Main navigation",
     "page_phases": "Page phases",
     "filter_by_status": "Filter by status",
+    "filter_by_tag": "Filter by technology",
     "photo_placeholder": "[photo]",
     "project_cover_alt": "{{name}} cover",
     "tagline_suffix": "Software with roots",

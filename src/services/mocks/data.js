@@ -15,21 +15,66 @@ export const settings = {
 // ── Services ──────────────────────────────────────────────────────────
 
 const _servicesPt = [
-  { id: 1, number: '01', title: 'Sites & marcas',    description: 'Sites institucionais e portefólios rápidos, bonitos e fáceis de gerir, com a identidade certa.',    tags: ['Design', 'React', 'SEO'] },
-  { id: 2, number: '02', title: 'Apps & plataformas', description: 'Aplicações web completas, do frontend à API e à base de dados, pensadas para crescer.',              tags: ['React', 'Spring Boot', 'MySQL'] },
-  { id: 3, number: '03', title: 'Infra & deploy',     description: 'Alojamento, CI/CD e monitorização para o teu produto estar sempre no ar.',                          tags: ['Docker', 'Linux', 'CI/CD'] },
+  {
+    id: 1, number: '01', title: 'Sites & marcas',
+    description: 'Sites institucionais e portefólios rápidos, bonitos e fáceis de gerir, com a identidade certa.',
+    tags: ['Design', 'React', 'SEO'],
+    includes: ['Estratégia de marca', 'Design de logótipo e identidade visual', 'Site responsivo (React ou CMS)', 'SEO técnico e meta tags', 'Domínio, alojamento e SSL'],
+  },
+  {
+    id: 2, number: '02', title: 'Apps & plataformas',
+    description: 'Aplicações web completas, do frontend à API e à base de dados, pensadas para crescer.',
+    tags: ['React', 'Spring Boot', 'MySQL'],
+    includes: ['Arquitetura frontend (React + Vite)', 'API REST (Spring Boot)', 'Base de dados relacional (MySQL)', 'Autenticação e controlo de acessos', 'Painel de administração'],
+  },
+  {
+    id: 3, number: '03', title: 'Infra & deploy',
+    description: 'Alojamento, CI/CD e monitorização para o teu produto estar sempre no ar.',
+    tags: ['Docker', 'Linux', 'CI/CD'],
+    includes: ['Setup de servidor VPS ou cloud', 'Pipeline CI/CD (GitHub Actions)', 'Configuração de domínio e SSL', 'Monitorização e alertas', 'Backups automáticos'],
+  },
 ];
 
 const _servicesEn = [
-  { id: 1, number: '01', title: 'Sites & brands',    description: 'Fast, beautiful institutional sites and portfolios that are easy to manage, with the right identity.', tags: ['Design', 'React', 'SEO'] },
-  { id: 2, number: '02', title: 'Apps & platforms',  description: 'Complete web applications, from frontend to API and database, built to scale.',                       tags: ['React', 'Spring Boot', 'MySQL'] },
-  { id: 3, number: '03', title: 'Infra & deploy',    description: 'Hosting, CI/CD and monitoring to keep your product always running.',                                  tags: ['Docker', 'Linux', 'CI/CD'] },
+  {
+    id: 1, number: '01', title: 'Sites & brands',
+    description: 'Fast, beautiful institutional sites and portfolios that are easy to manage, with the right identity.',
+    tags: ['Design', 'React', 'SEO'],
+    includes: ['Brand strategy', 'Logo and visual identity design', 'Responsive site (React or CMS)', 'Technical SEO and meta tags', 'Domain, hosting and SSL'],
+  },
+  {
+    id: 2, number: '02', title: 'Apps & platforms',
+    description: 'Complete web applications, from frontend to API and database, built to scale.',
+    tags: ['React', 'Spring Boot', 'MySQL'],
+    includes: ['Frontend architecture (React + Vite)', 'REST API (Spring Boot)', 'Relational database (MySQL)', 'Authentication and access control', 'Admin dashboard'],
+  },
+  {
+    id: 3, number: '03', title: 'Infra & deploy',
+    description: 'Hosting, CI/CD and monitoring to keep your product always running.',
+    tags: ['Docker', 'Linux', 'CI/CD'],
+    includes: ['VPS or cloud server setup', 'CI/CD pipeline (GitHub Actions)', 'Domain and SSL configuration', 'Monitoring and alerts', 'Automated backups'],
+  },
 ];
 
 const _servicesKri = [
-  { id: 1, number: '01', title: 'Sites & markas',    description: 'Sites institusionais i portefóliu rápidus, bonitus i fásil di geri, ku identidasdi serta.',           tags: ['Design', 'React', 'SEO'] },
-  { id: 2, number: '02', title: 'Apps & plataformas', description: 'Aplikasons web kompletus, di frontend pa API i pa bazi di dadus, pensadus pa kria.',                   tags: ['React', 'Spring Boot', 'MySQL'] },
-  { id: 3, number: '03', title: 'Infra & deploy',    description: 'Alodjamentu, CI/CD i monitorizason pa bus produtus sta sempri na ar.',                                   tags: ['Docker', 'Linux', 'CI/CD'] },
+  {
+    id: 1, number: '01', title: 'Sites & markas',
+    description: 'Sites institusionais i portefóliu rápidus, bonitus i fásil di geri, ku identidasdi serta.',
+    tags: ['Design', 'React', 'SEO'],
+    includes: ['Estratéjia di marka', 'Dizain di logu i identidasdi vijual', 'Site responsívu (React ó CMS)', 'SEO téknika i meta tags', 'Domíniu, alodjamentu i SSL'],
+  },
+  {
+    id: 2, number: '02', title: 'Apps & plataformas',
+    description: 'Aplikasons web kompletus, di frontend pa API i pa bazi di dadus, pensadus pa kria.',
+    tags: ['React', 'Spring Boot', 'MySQL'],
+    includes: ['Arkitetura frontend (React + Vite)', 'API REST (Spring Boot)', 'Bazi di dadus relasional (MySQL)', 'Otentikason i kontrolu di akesus', 'Painel di administrason'],
+  },
+  {
+    id: 3, number: '03', title: 'Infra & deploy',
+    description: 'Alodjamentu, CI/CD i monitorizason pa bus produtus sta sempri na ar.',
+    tags: ['Docker', 'Linux', 'CI/CD'],
+    includes: ['Setup di servidor VPS ó cloud', 'Pipeline CI/CD (GitHub Actions)', 'Konfigurasón di domíniu i SSL', 'Monitorizasón i alertas', 'Bakups otomátikus'],
+  },
 ];
 
 export const services = _servicesPt;
@@ -90,6 +135,14 @@ const _projectsPt = [
     liveUrl: null, repoUrl: null, year: 2026,
     team: [{ slug: 'rafael-reis', name: 'Rafael Reis', role: 'Design e desenvolvimento' }],
   },
+  {
+    id: 7, slug: 'NhaGastu', name: 'NhaGastu', shortName: 'Ng', status: 'COMING_SOON', featured: true,
+    summary:     'Gerenciamento dos teus gastos pessoais',
+    description: 'Ferramenta de gestão feita com React e Spring Boot',
+    tags: ['Spring Boot', 'React'], coverColor: '#0D4B57', coverTextColor: '#F1E4C3', coverImageUrl: null,
+    liveUrl: null, repoUrl: null, year: 2026,
+    team: [{ slug: 'miriam-pina', name: 'Miriam Pina', role: 'Fundadora, design e desenvolvimento' }],
+  },
 ];
 
 const _projectsEn = [
@@ -141,6 +194,14 @@ const _projectsEn = [
     liveUrl: null, repoUrl: null, year: 2026,
     team: [{ slug: 'rafael-reis', name: 'Rafael Reis', role: 'Design and development' }],
   },
+  {
+    id: 7, slug: 'NhaGastu', name: 'NhaGastu', shortName: 'Ng', status: 'COMING_SOON', featured: true,
+    summary:     'managemnt of your personal spents',
+    description: 'Managemnt tool built with React and Spring Boot',
+    tags: ['Spring Boot', 'React'], coverColor: '#0D4B57', coverTextColor: '#F1E4C3', coverImageUrl: null,
+    liveUrl: null, repoUrl: null, year: 2026,
+    team: [{ slug: 'miriam-pina', name: 'Miriam Pina', role: 'Founder, design and development' }],
+  },
 ];
 
 const _projectsKri = [
@@ -191,6 +252,14 @@ const _projectsKri = [
     tags: ['PWA', 'IndexedDB'], coverColor: '#C9D8D2', coverTextColor: '#082F37', coverImageUrl: null,
     liveUrl: null, repoUrl: null, year: 2026,
     team: [{ slug: 'rafael-reis', name: 'Rafael Reis', role: 'Design i dizinvulvimentu' }],
+  },
+  {
+    id: 7, slug: 'NhaGastu', name: 'NhaGastu', shortName: 'Ng', status: 'COMING_SOON', featured: true,
+    summary:     'Gerenciamentu di bus gastus pessuais',
+    description: 'Ferramenta di geston fetu ku React i Spring Boot',
+    tags: ['Spring Boot', 'React'], coverColor: '#0D4B57', coverTextColor: '#F1E4C3', coverImageUrl: null,
+    liveUrl: null, repoUrl: null, year: 2026,
+    team: [{ slug: 'miriam-pina', name: 'Miriam Pina', role: 'Fundadora, design e disenvolvimentu' }],
   },
 ];
 

@@ -1,9 +1,52 @@
 {
+  "footer": {
+    "nav": "Navigason",
+    "services": "Servisus"
+  },
   "nav": {
     "home": "Inísiu",
     "projects": "Projetu",
+    "services": "Servisus",
     "team": "Ekipa",
     "contact": "Kontatu"
+  },
+  "services": {
+    "heading": "Kuze ki nu ta fazi.",
+    "description": "Nu ta konstruí produtus dijitais di raiz — di identidasdi vijual pa infrastrutura.",
+    "contact_cta": "Kumesá prodjetu →",
+    "palette_sub": "Kuze ki nu ta fazi",
+    "what_includes": "Kuze ki ta inkluí",
+    "toggle_open": "Odja detalhis",
+    "toggle_close": "Fitxá",
+    "recent_work": "Trabálju resenti",
+    "see_all_projects": "Odja tudu prodjetu →",
+    "stat_headline": "1 stúdiu.\nTudu inkluídu.",
+    "stat_sub": "Dizain, kodigu i infrastrutura. Sem intermediárius, sem surprezas."
+  },
+  "process": {
+    "eyebrow": "Prosesu",
+    "heading": "Moda ki nu ta trabádja.",
+    "step_01_title": "Briefing",
+    "step_01_desc": "Nu ta oubi. Nu ta persibi negósiu, kontextu i objetivus antis di skrebê kodigu.",
+    "step_02_title": "Dizain",
+    "step_02_desc": "Nu ta fazi prututipu vijual di alta fidelidadi. Kada dizisaun tem un razon.",
+    "step_03_title": "Dizinvolvimentu",
+    "step_03_desc": "Kodigu limpu, semántiku i rápidu. Sem frameworks desnisesárius, sem atalhu.",
+    "step_04_title": "Lansamentu",
+    "step_04_desc": "Deploy, testis finais i suportu pós-lansamentu. Nu ta fikà juntu até tudo ta trabájà."
+  },
+  "why": {
+    "eyebrow": "Pamodi Badiu",
+    "heading": "Un stúdiu diferenti.",
+    "item_01_stat": "→ 1 ekipa",
+    "item_01_title": "Sem intermediárius.",
+    "item_01_desc": "Bu ta falà diretu ku kes ki ta dizinhà i ta skrebê kodigu. Sem gerentes, sem telefonin estragudu.",
+    "item_02_stat": "Full-stack",
+    "item_02_title": "Di logu pa servidor.",
+    "item_02_desc": "Marca, interfasi, frontend, backend — tudu sai di mezmustúdiu. Sem dependênsia di fornisedores externos.",
+    "item_03_stat": "🌍",
+    "item_03_title": "Kabu Verdi → Mundu.",
+    "item_03_desc": "Raizes lokais, padrões internasionais. Nu dja entregà pa klientis di 3 kontinentis."
   },
   "home": {
     "scroll_hint": "Fazi skrol po entra",
@@ -98,6 +141,7 @@
     "main_nav": "Navigason prinsipal",
     "page_phases": "Fazis di página",
     "filter_by_status": "Filtrá pa estadu",
+    "filter_by_tag": "Filtrá pa tenolojia",
     "photo_placeholder": "[fotu]",
     "project_cover_alt": "Kapa di prodjetu {{name}}",
     "tagline_suffix": "Software ku raízes",

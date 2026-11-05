@@ -1,4 +1,4 @@
-# Badiu Digital — Frontend
+# Badiu Digital | Frontend
 
 Site do estúdio Badiu Digital: home com apresentação por fases de scroll, projetos, equipa e um portefólio por colaborador.
 

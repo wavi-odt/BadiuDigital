@@ -350,7 +350,7 @@ body.splash-out main {
 
 /* ---------- TiltCard ---------- */
 .tilt-wrap {
-  perspective: 800px;
+  perspective: 1400px;
   position: relative;
   height: 100%;
   transition: transform .5s var(--badiu-ease-out);
@@ -609,6 +609,9 @@ html[data-theme="light"] .field select {
 /* Splash no tema claro */
 html[data-theme="light"] .splash { background: var(--badiu-ink); }
 
+/* Manifesto: evita branco puro em tema claro */
+html[data-theme="light"] #manifesto { background: var(--badiu-petrol-deep); }
+
 /* ThemeToggle */
 .theme-toggle {
   width: 38px; height: 38px;
@@ -819,6 +822,7 @@ html[data-theme="light"] .bottom-nav__item[aria-current="page"] { color: var(--b
   align-items: center;
   overflow: hidden;
   z-index: 1;
+  perspective: 2000px;
 }
 
 /* Star field fixed to the stage so it never scrolls */
@@ -827,16 +831,16 @@ html[data-theme="light"] .bottom-nav__item[aria-current="page"] { color: var(--b
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 1px) 23px 47px / 213px 193px,
-    radial-gradient(circle, rgba(255,255,255,0.22) 1px, transparent 1px) 97px 11px / 173px 211px,
-    radial-gradient(circle, rgba(255,255,255,0.28) 1px, transparent 1px) 150px 130px / 231px 157px,
-    radial-gradient(circle, rgba(191,211,207,0.35) 1px, transparent 1px) 67px 180px / 300px 270px,
-    radial-gradient(circle, rgba(240,138,75,0.18) 1px, transparent 1px) 190px 60px / 320px 290px,
-    radial-gradient(circle 1.5px, rgba(255,255,255,0.55) 0%, transparent 100%) 110px 220px / 500px 480px,
-    radial-gradient(circle 2px, rgba(255,255,255,0.4) 0%, transparent 100%) 340px 140px / 530px 470px;
+    radial-gradient(circle, rgba(255,255,255,0.35) 1px, transparent 1px) 23px 47px / 310px 290px,
+    radial-gradient(circle, rgba(255,255,255,0.22) 1px, transparent 1px) 97px 11px / 270px 330px,
+    radial-gradient(circle, rgba(255,255,255,0.28) 1px, transparent 1px) 150px 130px / 350px 240px,
+    radial-gradient(circle, rgba(191,211,207,0.35) 1px, transparent 1px) 67px 180px / 450px 400px,
+    radial-gradient(circle, rgba(240,138,75,0.18) 1px, transparent 1px) 190px 60px / 500px 440px,
+    radial-gradient(circle 1.5px, rgba(255,255,255,0.55) 0%, transparent 100%) 110px 220px / 700px 680px,
+    radial-gradient(circle 2px, rgba(255,255,255,0.4) 0%, transparent 100%) 340px 140px / 730px 670px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.3;
 }
 
 /* Each service panel sits absolutely over the stage */
@@ -859,6 +863,8 @@ html[data-theme="light"] .bottom-nav__item[aria-current="page"] { color: var(--b
   position: relative;
   z-index: 1;
   width: 100%;
+  transform: rotateY(calc((1 - var(--t-enter)) * -30deg + var(--t-exit) * 30deg));
+  will-change: transform;
 }
 
 /* Nebula glow per panel */
@@ -1568,6 +1574,7 @@ html[data-theme="light"] .bottom-nav__item[aria-current="page"] { color: var(--b
   .cosmos-panel__desc,
   .cosmos-panel__includes,
   .cosmos-panel__footer  { opacity: 1 !important; transform: none !important; }
+  .cosmos-panel__inner   { transform: none !important; }
   .cosmos-panel__bg-num { opacity: 0.07 !important; transform: translateY(-50%) !important; }
   .cosmos-panel__glow { opacity: 0.4 !important; }
   .services-hero__scroll-cue { opacity: 1 !important; animation: none !important; transform: translateX(-50%) !important; }

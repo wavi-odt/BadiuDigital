@@ -67,8 +67,8 @@ export default function CustomCursor() {
       if (next === tone) return;
       tone = next;
       if (next === 'orange') {
-        wrap.style.setProperty('--cursor-color',       '#8B1A1A');
-        wrap.style.setProperty('--cursor-hover-color', '#6B0A0A');
+        wrap.style.setProperty('--cursor-color',       '#061F25');
+        wrap.style.setProperty('--cursor-hover-color', '#082F37');
       } else {
         wrap.style.removeProperty('--cursor-color');
         wrap.style.removeProperty('--cursor-hover-color');

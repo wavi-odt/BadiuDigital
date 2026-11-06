@@ -1,0 +1,213 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Badiu Digital" [ref=e5]:
+        - /url: /
+        - generic [ref=e13]: badiu
+      - generic [ref=e14]:
+        - navigation "Principal" [ref=e15]:
+          - link "Projetos" [ref=e16]:
+            - /url: /projetos
+          - link "Serviços" [ref=e17]:
+            - /url: /servicos
+          - link "Equipa" [ref=e18]:
+            - /url: /equipa
+        - button "Mudar idioma" [ref=e20]: PT
+        - button "Mudar para tema escuro" [ref=e21]
+        - button "Pesquisar (Ctrl+K)" [ref=e24]
+        - link "Contacto" [ref=e28]:
+          - /url: /contacto
+  - main [ref=e29]:
+    - navigation "Fases da página" [ref=e30]:
+      - button "Início" [ref=e31]
+      - button "Manifesto" [ref=e33]
+      - button "Serviços" [ref=e35]
+      - button "Projetos" [ref=e37]
+      - button "Contacto" [ref=e39]
+    - generic [ref=e42]:
+      - generic [ref=e48]:
+        - heading "b a d i u" [level=1] [ref=e49]:
+          - generic [ref=e50]: b
+          - generic [ref=e51]: a
+          - generic [ref=e52]: d
+          - generic [ref=e53]: i
+          - generic [ref=e54]: u
+        - paragraph [ref=e55]: Estúdio digital · Santiago, Cabo Verde
+      - generic [ref=e57]:
+        - generic [ref=e58]: Faz scroll para entrar
+        - generic [aria-hidden] [ref=e59]: ↓
+    - generic [ref=e61]:
+      - generic [ref=e62]: 02 Manifesto
+      - paragraph [ref=e63]:
+        - generic [ref=e64]: Construímos
+        - generic [ref=e65]: software
+        - generic [ref=e66]: com
+        - generic [ref=e67]: raízes.
+        - generic [ref=e68]: Interfaces
+        - generic [ref=e69]: que
+        - generic [ref=e70]: se
+        - generic [ref=e71]: sentem,
+        - generic [ref=e72]: produtos
+        - generic [ref=e73]: que
+        - generic [ref=e74]: ficam
+        - generic [ref=e75]: e
+        - generic [ref=e76]: código
+        - generic [ref=e77]: feito
+        - generic [ref=e78]: com
+        - generic [ref=e79]: cuidado,
+        - generic [ref=e80]: de
+        - generic [ref=e81]: Santiago
+        - generic [ref=e82]: para
+        - generic [ref=e83]: o
+        - generic [ref=e84]: mundo.
+    - generic [ref=e86]:
+      - generic [ref=e87]: 03 O que fazemos
+      - generic [ref=e88]:
+        - generic [aria-hidden] [ref=e89]:
+          - generic [ref=e90]: "01"
+          - generic [ref=e91]: "02"
+          - generic [ref=e92]: "03"
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - heading "Sites & marcas" [level=2] [ref=e138]
+            - paragraph [ref=e139]: Sites institucionais e portefólios rápidos, bonitos e fáceis de gerir, com a identidade certa.
+            - generic [ref=e140]:
+              - generic [ref=e141]: Design
+              - generic [ref=e142]: React
+              - generic [ref=e143]: SEO
+          - generic [aria-hidden]:
+            - heading [level=2]: Apps & plataformas
+            - paragraph: Aplicações web completas, do frontend à API e à base de dados, pensadas para crescer.
+            - generic:
+              - generic: React
+              - generic: Spring Boot
+              - generic: MySQL
+          - generic [aria-hidden]:
+            - heading [level=2]: Infra & deploy
+            - paragraph: Alojamento, CI/CD e monitorização para o teu produto estar sempre no ar.
+            - generic:
+              - generic: Docker
+              - generic: Linux
+              - generic: CI/CD
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - heading "Trabalho" [level=2] [ref=e102]
+        - generic [ref=e103]: 00 / 07
+      - link "Batuku Em desenvolvimento Batuku Descoberta e monetização para artistas independentes cabo-verdianos. React · Spring Boot · MySQL ↗" [ref=e144]:
+        - /url: /projetos/batuku
+        - generic [ref=e145]: Batuku
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: Em desenvolvimento
+            - generic [ref=e150]: Batuku
+            - generic [ref=e151]: Descoberta e monetização para artistas independentes cabo-verdianos.
+          - generic [ref=e152]:
+            - generic [ref=e153]: React · Spring Boot · MySQL
+            - generic [ref=e154]: ↗
+      - link "Fla Em desenvolvimento Fla Dicionário e tradutor Kriolu ↔ Português, com extensão para o Chrome. React · API · Chrome Extension ↗" [ref=e155]:
+        - /url: /projetos/fla
+        - generic [ref=e156]: Fla
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]: Em desenvolvimento
+            - generic [ref=e161]: Fla
+            - generic [ref=e162]: Dicionário e tradutor Kriolu ↔ Português, com extensão para o Chrome.
+          - generic [ref=e163]:
+            - generic [ref=e164]: React · API · Chrome Extension
+            - generic [ref=e165]: ↗
+      - 'link "0district Cliente 0district Site para uma produtora: identidade, catálogo e contactos. React · CMS ↗" [ref=e166]':
+        - /url: /projetos/0district
+        - generic [ref=e167]: 0district
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]: Cliente
+            - generic [ref=e172]: 0district
+            - generic [ref=e173]: "Site para uma produtora: identidade, catálogo e contactos."
+          - generic [ref=e174]:
+            - generic [ref=e175]: React · CMS
+            - generic [ref=e176]: ↗
+      - link "Toolkit de áudio Em breve Toolkit de áudio Deteta BPM, tom e loudness no browser, em tempo real. Web Audio API · React ↗" [ref=e177]:
+        - /url: /projetos/toolkit-audio
+        - generic [ref=e178]: Toolkit de áudio
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - generic [ref=e182]: Em breve
+            - generic [ref=e183]: Toolkit de áudio
+            - generic [ref=e184]: Deteta BPM, tom e loudness no browser, em tempo real.
+          - generic [ref=e185]:
+            - generic [ref=e186]: Web Audio API · React
+            - generic [ref=e187]: ↗
+      - link "Ouril Em breve Ouril O jogo tradicional cabo-verdiano online, com IA e multijogador. React · WebSockets ↗" [ref=e188]:
+        - /url: /projetos/ouril
+        - generic [ref=e189]: Ouril
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]: Em breve
+            - generic [ref=e194]: Ouril
+            - generic [ref=e195]: O jogo tradicional cabo-verdiano online, com IA e multijogador.
+          - generic [ref=e196]:
+            - generic [ref=e197]: React · WebSockets
+            - generic [ref=e198]: ↗
+      - link "Treino Em breve Treino App de treino e alimentação que funciona offline no telemóvel. PWA · IndexedDB ↗" [ref=e199]:
+        - /url: /projetos/treino
+        - generic [ref=e200]: Treino
+        - generic [ref=e202]:
+          - generic [ref=e203]:
+            - generic [ref=e204]: Em breve
+            - generic [ref=e205]: Treino
+            - generic [ref=e206]: App de treino e alimentação que funciona offline no telemóvel.
+          - generic [ref=e207]:
+            - generic [ref=e208]: PWA · IndexedDB
+            - generic [ref=e209]: ↗
+      - link "NhaGastu Em breve NhaGastu Gerenciamento dos teus gastos pessoais Spring Boot · React ↗" [ref=e210]:
+        - /url: /projetos/NhaGastu
+        - generic [ref=e211]: NhaGastu
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e215]: Em breve
+            - generic [ref=e216]: NhaGastu
+            - generic [ref=e217]: Gerenciamento dos teus gastos pessoais
+          - generic [ref=e218]:
+            - generic [ref=e219]: Spring Boot · React
+            - generic [ref=e220]: ↗
+    - generic [ref=e107]:
+      - generic [ref=e108]: 05 Vamos falar
+      - heading "Tens uma ideia?" [level=2] [ref=e109]
+      - generic [ref=e110]:
+        - link "Começar um projeto →" [ref=e112]:
+          - /url: /contacto
+        - link "hello@badiudigital.com" [ref=e222]:
+          - /url: mailto:hello@badiudigital.com
+        - link "Conhecer a equipa" [ref=e114]:
+          - /url: /equipa
+  - contentinfo [ref=e115]:
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - link "badiu" [ref=e119]:
+            - /url: /
+          - paragraph [ref=e128]: Estúdio digital · Santiago, Cabo Verde
+          - generic [ref=e223]:
+            - link "hello@badiudigital.com" [ref=e224]:
+              - /url: mailto:hello@badiudigital.com
+            - link "Instagram" [ref=e225]:
+              - /url: https://instagram.com/badiudigital
+        - generic [ref=e129]:
+          - generic [ref=e130]: Navegação
+          - navigation [ref=e131]:
+            - link "Projetos" [ref=e132]:
+              - /url: /projetos
+            - link "Equipa" [ref=e133]:
+              - /url: /equipa
+            - link "Contacto" [ref=e134]:
+              - /url: /contacto
+        - generic [ref=e135]:
+          - generic [ref=e136]: Serviços
+          - generic [ref=e226]:
+            - link "Sites & marcas" [ref=e227]:
+              - /url: /contacto
+            - link "Apps & plataformas" [ref=e228]:
+              - /url: /contacto
+            - link "Infra & deploy" [ref=e229]:
+              - /url: /contacto
+      - generic [ref=e137]: © 2026 Badiu Digital

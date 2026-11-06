@@ -1,0 +1,94 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - link "Badiu Digital" [ref=f3e5]:
+        - /url: /
+        - generic [ref=f3e13]: badiu
+      - generic [ref=f3e14]:
+        - navigation "Principal" [ref=f3e15]:
+          - link "Projetos" [ref=f3e16]:
+            - /url: /projetos
+          - link "Serviços" [ref=f3e17]:
+            - /url: /servicos
+          - link "Equipa" [ref=f3e18]:
+            - /url: /equipa
+        - button "Mudar idioma" [ref=f3e20]: PT
+        - button "Mudar para tema escuro" [ref=f3e21]
+        - button "Pesquisar (Ctrl+K)" [ref=f3e24]
+        - link "Contacto" [ref=f3e28]:
+          - /url: /contacto
+  - main [ref=f3e29]:
+    - generic [ref=f3e30]:
+      - generic [ref=f3e31]: Equipa
+      - heading "As pessoas por trás da Badiu." [level=1] [ref=f3e32]:
+        - generic [ref=f3e33]:
+          - generic [ref=f3e34]: As
+          - generic [ref=f3e36]: pessoas
+          - generic [ref=f3e38]: por
+          - generic [ref=f3e40]: trás
+          - generic [ref=f3e42]: da
+          - generic [ref=f3e44]: Badiu.
+      - paragraph [ref=f3e46]: Um estúdio pequeno, de pessoas que escrevem código, desenham interfaces e gostam de ver ideias a ganhar forma. Cada um tem o seu portefólio.
+    - generic [ref=f3e85]:
+      - generic [ref=f3e87]:
+        - generic [ref=f3e89]:
+          - generic [ref=f3e90]:
+            - generic [ref=f3e91]: "[foto]"
+            - generic [ref=f3e96]: Fundador
+          - generic [ref=f3e97]:
+            - generic [ref=f3e98]:
+              - generic [ref=f3e99]: Rafael Reis
+              - generic [ref=f3e100]: Frontend · Design de interfaces · Deploy
+            - generic [ref=f3e101]: ↗
+        - link "Rafael Reis" [ref=f3e102]:
+          - /url: /equipa/rafael-reis
+      - generic [ref=f3e104]:
+        - generic [ref=f3e106]:
+          - generic [ref=f3e107]:
+            - generic [ref=f3e108]: "[foto]"
+            - generic [ref=f3e113]: Co-Fundador
+          - generic [ref=f3e114]:
+            - generic [ref=f3e115]:
+              - generic [ref=f3e116]: Miriam Pina
+              - generic [ref=f3e117]: "[Áreas de especialidade]"
+            - generic [ref=f3e118]: ↗
+        - link "Miriam Pina" [ref=f3e119]:
+          - /url: /equipa/Miriam Pina
+      - link "Queres fazer parte? Procuramos pessoas que gostem de construir coisas com cuidado. Falar connosco →" [ref=f3e121]:
+        - /url: /contacto
+        - generic [ref=f3e125]:
+          - generic [ref=f3e126]: Queres fazer parte?
+          - generic [ref=f3e127]: Procuramos pessoas que gostem de construir coisas com cuidado.
+          - generic [ref=f3e128]: Falar connosco →
+    - paragraph [ref=f3e57]: "Trabalhamos juntos em cada projeto: design, código e deploy na mesma mesa."
+  - contentinfo [ref=f3e62]:
+    - generic [ref=f3e63]:
+      - generic [ref=f3e64]:
+        - generic [ref=f3e65]:
+          - link "badiu" [ref=f3e66]:
+            - /url: /
+          - paragraph [ref=f3e75]: Estúdio digital · Santiago, Cabo Verde
+          - generic [ref=f3e129]:
+            - link "hello@badiudigital.com" [ref=f3e130]:
+              - /url: mailto:hello@badiudigital.com
+            - link "Instagram" [ref=f3e131]:
+              - /url: https://instagram.com/badiudigital
+        - generic [ref=f3e76]:
+          - generic [ref=f3e77]: Navegação
+          - navigation [ref=f3e78]:
+            - link "Projetos" [ref=f3e79]:
+              - /url: /projetos
+            - link "Equipa" [ref=f3e80]:
+              - /url: /equipa
+            - link "Contacto" [ref=f3e81]:
+              - /url: /contacto
+        - generic [ref=f3e82]:
+          - generic [ref=f3e83]: Serviços
+          - generic [ref=f3e132]:
+            - link "Sites & marcas" [ref=f3e133]:
+              - /url: /contacto
+            - link "Apps & plataformas" [ref=f3e134]:
+              - /url: /contacto
+            - link "Infra & deploy" [ref=f3e135]:
+              - /url: /contacto
+      - generic [ref=f3e84]: © 2026 Badiu Digital

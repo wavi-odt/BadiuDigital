@@ -7,7 +7,7 @@ const ServicesPhase = forwardRef(function ServicesPhase({ services, active }, re
   return (
     <section id="servicos" ref={ref} data-tone="light" className="phase bg-sand" style={{ height: '300vh' }}>
       <div className="phase__stage flex flex-col justify-center gap-10 px-[clamp(24px,7vw,120px)] pb-14 pt-24 text-ink-text">
-        <svg width="620" height="620" viewBox="0 0 100 100" aria-hidden="true" className="services__deco absolute -right-30 top-1/2 -mt-[310px] opacity-50">
+        <svg width="620" height="620" viewBox="0 0 100 100" aria-hidden="true" className="services__deco absolute right-[-340px] top-1/2 -mt-[310px] opacity-30 pointer-events-none">
           <polygon points="50,2 98,50 50,98 2,50" fill="none" stroke="#0D4B57" strokeWidth="0.6" />
           <polygon points="50,18 82,50 50,82 18,50" fill="none" stroke="#0D4B57" strokeWidth="0.6" />
           <polygon points="50,34 66,50 50,66 34,50" fill="#F08A4B" />

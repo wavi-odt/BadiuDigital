@@ -1,0 +1,52 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - link "Badiu Digital" [ref=f3e5]:
+        - /url: /
+        - generic [ref=f3e13]: badiu
+      - generic [ref=f3e14]:
+        - navigation "Principal" [ref=f3e15]:
+          - link "Projetos" [ref=f3e16]:
+            - /url: /projetos
+          - link "Serviços" [ref=f3e17]:
+            - /url: /servicos
+          - link "Equipa" [ref=f3e18]:
+            - /url: /equipa
+        - button "Mudar idioma" [ref=f3e20]: PT
+        - button "Mudar para tema escuro" [ref=f3e21]
+        - button "Pesquisar (Ctrl+K)" [ref=f3e24]
+        - link "Contacto" [ref=f3e28]:
+          - /url: /contacto
+  - main [ref=f3e29]:
+    - generic [ref=f3e30]:
+      - generic [ref=f3e31]: Equipa
+      - heading "As pessoas por trás da Badiu." [level=1] [ref=f3e32]:
+        - generic [ref=f3e33]:
+          - generic [ref=f3e34]: As
+          - generic [ref=f3e36]: pessoas
+          - generic [ref=f3e38]: por
+          - generic [ref=f3e40]: trás
+          - generic [ref=f3e42]: da
+          - generic [ref=f3e44]: Badiu.
+      - paragraph [ref=f3e46]: Um estúdio pequeno, de pessoas que escrevem código, desenham interfaces e gostam de ver ideias a ganhar forma. Cada um tem o seu portefólio.
+    - status [ref=f3e48]:
+      - generic [ref=f3e53]: A carregar…
+    - paragraph [ref=f3e57]: "Trabalhamos juntos em cada projeto: design, código e deploy na mesma mesa."
+  - contentinfo [ref=f3e62]:
+    - generic [ref=f3e63]:
+      - generic [ref=f3e64]:
+        - generic [ref=f3e65]:
+          - link "badiu" [ref=f3e66]:
+            - /url: /
+          - paragraph [ref=f3e75]: Estúdio digital · Santiago, Cabo Verde
+        - generic [ref=f3e76]:
+          - generic [ref=f3e77]: Navegação
+          - navigation [ref=f3e78]:
+            - link "Projetos" [ref=f3e79]:
+              - /url: /projetos
+            - link "Equipa" [ref=f3e80]:
+              - /url: /equipa
+            - link "Contacto" [ref=f3e81]:
+              - /url: /contacto
+        - generic [ref=f3e82]: Serviços
+      - generic [ref=f3e84]: © 2026 Badiu Digital

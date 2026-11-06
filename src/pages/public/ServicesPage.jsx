@@ -134,6 +134,10 @@ function WhySection() {
                 className={cn('why-item', visible && 'why-item--visible')}
                 style={{ '--why-i': i }}
               >
+                <svg width="18" height="18" viewBox="0 0 100 100" aria-hidden="true" className="mb-5 opacity-40 text-orange">
+                  <polygon points="50,0 100,50 50,100 0,50" fill="none" stroke="currentColor" strokeWidth="6" />
+                  <polygon points="50,28 72,50 50,72 28,50" fill="currentColor" fillOpacity="0.45" />
+                </svg>
                 <span className="why-item__stat">{item.stat}</span>
                 <h3 className="why-item__title">{item.title}</h3>
                 <p className="why-item__desc">{item.desc}</p>

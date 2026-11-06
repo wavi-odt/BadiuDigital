@@ -20,6 +20,9 @@
     "toggle_close": "Close",
     "recent_work": "Recent work",
     "see_all_projects": "See all projects →",
+    "cta_line1": "Got an",
+    "cta_line2": "idea?",
+    "cta_sub": "Tell us what you have in mind: a website, an app, or a full product.",
     "stat_headline": "1 studio.\nAll included.",
     "stat_sub": "Design, code and infrastructure. No middlemen, no surprises."
   },

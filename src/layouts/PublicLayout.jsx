@@ -4,6 +4,7 @@ import Header from '@/components/PublicComponets/Header';
 import Footer from '@/components/PublicComponets/Footer';
 import WipeOverlay from '@/components/PublicComponets/WipeOverlay';
 import CustomCursor from '@/components/PublicComponets/CustomCursor';
+import FilmGrain from '@/components/PublicComponets/FilmGrain';
 import SplashScreen from '@/components/PublicComponets/SplashScreen';
 import CommandPalette, { CommandPaletteProvider } from '@/components/PublicComponets/CommandPalette';
 import BottomNav from '@/components/PublicComponets/BottomNav';
@@ -38,6 +39,7 @@ export default function PublicLayout() {
   return (
     <CommandPaletteProvider>
       <SplashScreen />
+      <FilmGrain />
       <CustomCursor />
       <WipeOverlay />
       <Header tone={headerTone} />

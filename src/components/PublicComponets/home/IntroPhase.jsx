@@ -7,8 +7,10 @@ const LETTERS = 'badiu'.split('');
 const IntroPhase = forwardRef(function IntroPhase({ tagline }, ref) {
   const { t } = useTranslation();
   return (
-    <section id="inicio" ref={ref} data-tone="dark" className="phase bg-ink" style={{ height: '200vh' }}>
+    <section id="inicio" ref={ref} data-tone="dark" className="phase bg-ink" style={{ height: '300vh' }}>
       <Spotlight className="phase__stage flex flex-col items-center justify-center text-sand">
+        <div className="intro__light" aria-hidden="true" />
+        <div className="intro__gem-shadow" aria-hidden="true" />
         <div className="intro__gem" aria-hidden="true">
           <svg width="300" height="300" viewBox="0 0 100 100" className="overflow-visible">
             <polygon points="50,0 100,50 50,100 0,50" fill="#F1E4C3" />

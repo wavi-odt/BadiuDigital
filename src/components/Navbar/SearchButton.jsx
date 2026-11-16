@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import { useCommandPalette, isMac } from '@/components/PublicComponets/CommandPalette';
+import { useSearch, isMac } from '@/components/Search';
 
 /** Abre a pesquisa (paleta de comandos, também com Ctrl/⌘ + K). */
 export default function SearchButton() {
   const { t } = useTranslation();
-  const { openPalette } = useCommandPalette();
+  const { openSearch } = useSearch();
   const shortcut = isMac ? '⌘K' : 'Ctrl K';
 
   return (
     <button
       type="button"
-      onClick={openPalette}
+      onClick={openSearch}
       className="icon-btn search-btn"
       aria-label={t('ui.search', { shortcut })}
       aria-keyshortcuts={isMac ? 'Meta+K' : 'Control+K'}

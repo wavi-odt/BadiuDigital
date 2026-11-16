@@ -9,10 +9,9 @@ import ScrollProgress from '@/components/ScrollProgress';
 import Cursor from '@/components/Cursor';
 import Grain from '@/components/Grain';
 import Preloader from '@/components/Preloader';
-// TEMPORÁRIO: navegação mobile e pesquisa antigas (visual novo na Fase 3)
 import Footer from '@/components/Footer';
-import BottomNav from '@/components/PublicComponets/BottomNav';
-import CommandPalette, { CommandPaletteProvider } from '@/components/PublicComponets/CommandPalette';
+import BottomNav from '@/components/BottomNav';
+import Search, { SearchProvider } from '@/components/Search';
 
 export default function Layout() {
   const { t } = useTranslation();
@@ -41,20 +40,19 @@ export default function Layout() {
   }, [location.key]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <CommandPaletteProvider>
+    <SearchProvider>
       <a href="#conteudo" className="skip-link">{t('ui.skip_to_content')}</a>
       <Preloader />
       <ScrollProgress />
       <Navbar />
-      {/* useOutletContext().setHeaderTone: mantido para as páginas antigas (sem efeito) */}
-      <main id="conteudo" tabIndex={-1} className="main-content">
-        <Outlet context={{ setHeaderTone: () => {}, intro }} />
+      <main id="conteudo" tabIndex={-1}>
+        <Outlet context={{ intro }} />
       </main>
       <Footer />
       <BottomNav />
-      <CommandPalette />
+      <Search />
       <Cursor />
       <Grain />
-    </CommandPaletteProvider>
+    </SearchProvider>
   );
 }

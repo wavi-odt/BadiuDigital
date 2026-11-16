@@ -1,22 +1,27 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Badiu Digital | estúdio digital." />
-    <meta name="theme-color" content="#061F25" id="meta-theme-color" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Badiu Digital: estúdio digital em Santiago, Cabo Verde. Design, desenvolvimento e infraestrutura de produtos digitais." />
+    <meta name="theme-color" content="#0A0A0A" id="meta-theme-color" />
     <script>
-      (function(){
-        var t=localStorage.getItem('badiu-theme')||(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark');
-        document.documentElement.dataset.theme=t;
-        if(t==='light') document.getElementById('meta-theme-color').content='#F5EDD8';
+      (function () {
+        var d = document.documentElement;
+        d.classList.remove('no-js');
+        d.classList.add('js');
+        var t = 'dark';
+        try { var s = localStorage.getItem('badiu-theme'); if (s === 'light' || s === 'dark') t = s; } catch (e) {}
+        d.dataset.theme = t;
+        if (t === 'light') document.getElementById('meta-theme-color').content = '#F5F5F2';
       })();
     </script>
+    <link rel="preload" href="/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fraunces-latin-opsz-italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-badiu.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-    <title>Badiu Digital — Software com raízes</title>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Badiu Digital | Software com raízes</title>
   </head>
   <body>
     <div id="root"></div>

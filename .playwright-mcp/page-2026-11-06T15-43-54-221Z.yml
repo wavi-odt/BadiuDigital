@@ -1,0 +1,103 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Badiu Digital" [ref=e5]:
+        - /url: /
+        - generic [ref=e13]: badiu
+      - generic [ref=e14]:
+        - navigation "Principal" [ref=e15]:
+          - link "Projetos" [ref=e16]:
+            - /url: /projetos
+          - link "Serviços" [ref=e17]:
+            - /url: /servicos
+          - link "Equipa" [ref=e18]:
+            - /url: /equipa
+        - button "Mudar idioma" [ref=e20]: PT
+        - button "Mudar para tema escuro" [ref=e21]
+        - button "Pesquisar (Ctrl+K)" [ref=e24]
+        - link "Contacto" [ref=e28]:
+          - /url: /contacto
+  - main [ref=e29]:
+    - navigation "Fases da página" [ref=e30]:
+      - button "Início" [ref=e31]
+      - button "Manifesto" [ref=e33]
+      - button "Serviços" [ref=e35]
+      - button "Projetos" [ref=e37]
+      - button "Contacto" [ref=e39]
+    - generic [ref=e42]:
+      - generic [ref=e48]:
+        - heading "b a d i u" [level=1] [ref=e49]:
+          - generic [ref=e50]: b
+          - generic [ref=e51]: a
+          - generic [ref=e52]: d
+          - generic [ref=e53]: i
+          - generic [ref=e54]: u
+        - paragraph [ref=e55]: Estúdio digital · Santiago, Cabo Verde
+      - generic [ref=e57]:
+        - generic [ref=e58]: Faz scroll para entrar
+        - generic [aria-hidden] [ref=e59]: ↓
+    - generic [ref=e61]:
+      - generic [ref=e62]: 02 Manifesto
+      - paragraph [ref=e63]:
+        - generic [ref=e64]: Construímos
+        - generic [ref=e65]: software
+        - generic [ref=e66]: com
+        - generic [ref=e67]: raízes.
+        - generic [ref=e68]: Interfaces
+        - generic [ref=e69]: que
+        - generic [ref=e70]: se
+        - generic [ref=e71]: sentem,
+        - generic [ref=e72]: produtos
+        - generic [ref=e73]: que
+        - generic [ref=e74]: ficam
+        - generic [ref=e75]: e
+        - generic [ref=e76]: código
+        - generic [ref=e77]: feito
+        - generic [ref=e78]: com
+        - generic [ref=e79]: cuidado,
+        - generic [ref=e80]: de
+        - generic [ref=e81]: Santiago
+        - generic [ref=e82]: para
+        - generic [ref=e83]: o
+        - generic [ref=e84]: mundo.
+    - generic [ref=e86]:
+      - generic [ref=e87]: 03 O que fazemos
+      - generic [ref=e88]:
+        - generic [aria-hidden] [ref=e89]:
+          - generic [ref=e90]: "01"
+          - generic [ref=e91]: "02"
+          - generic [ref=e92]: "03"
+        - generic [ref=e94]:
+          - heading [level=2]
+          - paragraph
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - heading "Trabalho" [level=2] [ref=e102]
+        - generic [ref=e103]: 00 / 00
+      - paragraph [ref=e104]: Ainda não há projetos para mostrar.
+    - generic [ref=e107]:
+      - generic [ref=e108]: 05 Vamos falar
+      - heading "Tens uma ideia?" [level=2] [ref=e109]
+      - generic [ref=e110]:
+        - link "Começar um projeto →" [ref=e112]:
+          - /url: /contacto
+        - link "Conhecer a equipa" [ref=e114]:
+          - /url: /equipa
+  - contentinfo [ref=e115]:
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - link "badiu" [ref=e119]:
+            - /url: /
+          - paragraph [ref=e128]: Estúdio digital · Santiago, Cabo Verde
+        - generic [ref=e129]:
+          - generic [ref=e130]: Navegação
+          - navigation [ref=e131]:
+            - link "Projetos" [ref=e132]:
+              - /url: /projetos
+            - link "Equipa" [ref=e133]:
+              - /url: /equipa
+            - link "Contacto" [ref=e134]:
+              - /url: /contacto
+        - generic [ref=e135]: Serviços
+      - generic [ref=e137]: © 2026 Badiu Digital

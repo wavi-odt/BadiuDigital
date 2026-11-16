@@ -63,8 +63,19 @@
     "no_projects": "Ainda não há projetos para mostrar.",
     "tagline": "Estúdio digital · Santiago, Cabo Verde",
     "manifesto": "Construímos software com raízes. Interfaces que se sentem, produtos que ficam e código feito com cuidado, de Santiago para o mundo.",
-    "manifesto_accents": ["raízes.", "sentem,", "ficam", "mundo."],
-    "phases": ["Início", "Manifesto", "Serviços", "Projetos", "Contacto"]
+    "manifesto_accents": [
+      "raízes.",
+      "sentem,",
+      "ficam",
+      "mundo."
+    ],
+    "phases": [
+      "Início",
+      "Manifesto",
+      "Serviços",
+      "Projetos",
+      "Contacto"
+    ]
   },
   "team": {
     "heading": "As pessoas por trás da Badiu.",
@@ -92,7 +103,8 @@
     "status_live": "Online",
     "status_client": "Cliente",
     "status_in_dev": "Em desenvolvimento",
-    "status_coming": "Em breve"
+    "status_coming": "Em breve",
+    "empty": "Sem projetos para este filtro."
   },
   "project": {
     "breadcrumb": "Projetos",
@@ -101,7 +113,8 @@
     "view_code": "Código ↗",
     "stack": "Stack",
     "team": "Equipa",
-    "year": "Ano"
+    "year": "Ano",
+    "next": "Próximo projeto"
   },
   "contact": {
     "eyebrow": "Contacto",
@@ -148,7 +161,11 @@
     "photo_placeholder": "[foto]",
     "project_cover_alt": "Capa do projeto {{name}}",
     "tagline_suffix": "Software com raízes",
-    "header_nav": "Principal"
+    "header_nav": "Principal",
+    "skip_to_content": "Saltar para o conteúdo",
+    "home_link": "Badiu Digital, início",
+    "scroll_progress": "Progresso da página",
+    "loading_page": "A carregar…"
   },
   "palette": {
     "title": "Paleta de comandos",
@@ -168,5 +185,86 @@
     "group_members": "Equipa",
     "group_actions": "Ações",
     "results": "Resultados"
+  },
+  "cursor": {
+    "view": "ver",
+    "open": "abrir",
+    "go": "bora",
+    "talk": "falar"
+  },
+  "homepage": {
+    "hero": {
+      "label": "Estúdio digital · Santiago, Cabo Verde",
+      "title_a": "Software com",
+      "title_b": "raízes.",
+      "lead": "Desenhamos e construímos produtos digitais com o cuidado de quem tece um pano: fio a fio, sem pressa de parecer igual aos outros.",
+      "cta_start": "Começar um projeto",
+      "cta_work": "Ver trabalho",
+      "scroll": "Faz scroll"
+    },
+    "manifesto": {
+      "label": "Manifesto",
+      "text": "Em Santiago, o pano di terra faz-se *devagar*, fio a fio, até o padrão aparecer. Fazemos software da mesma forma: cada ecrã, cada linha de código e cada servidor *tecidos* com intenção. Juntamos design, engenharia e infraestrutura para que o teu produto tenha *raízes* e aguente o *tempo.*"
+    },
+    "services": {
+      "title_a": "O que",
+      "title_b": "tecemos.",
+      "label": "{{count}} serviços · arrasta com o scroll",
+      "label_mobile": "{{count}} serviços",
+      "panel": "Serviço {{n}} de {{total}}"
+    },
+    "work": {
+      "title_a": "Trabalho",
+      "title_b": "selecionado.",
+      "label": "2024 — 2026",
+      "all": "Ver todos os projetos",
+      "empty": "Ainda não há projetos para mostrar."
+    },
+    "process": {
+      "title_a": "Fio a",
+      "title_b": "fio.",
+      "label": "Processo",
+      "step": "Etapa {{n}}",
+      "steps": [
+        {
+          "t": "Descobrir",
+          "d": "Ouvimos, investigamos e definimos o problema certo antes de desenhar."
+        },
+        {
+          "t": "Desenhar",
+          "d": "Protótipos e sistema visual, testados cedo e afinados contigo."
+        },
+        {
+          "t": "Construir",
+          "d": "Código limpo, revisto e entregue em ciclos curtos que podes ver."
+        },
+        {
+          "t": "Lançar",
+          "d": "Deploy, medição e manutenção. O produto continua a crescer."
+        }
+      ]
+    },
+    "team": {
+      "title_a": "Quem",
+      "title_b": "tece.",
+      "label": "Equipa",
+      "all": "Conhecer a equipa",
+      "portfolio": "Ver portefólio"
+    },
+    "cta": {
+      "label": "Próximo projeto",
+      "title_a": "Vamos tecer algo",
+      "title_b": "juntos?"
+    }
+  },
+  "footer2": {
+    "studio": "Estúdio",
+    "studio_place": "Praia, Santiago",
+    "studio_country": "Cabo Verde",
+    "clock": "Hora em Santiago",
+    "socials": "Redes",
+    "contact": "Contacto",
+    "nav": "Navegação",
+    "rights": "Todos os direitos reservados."
   }
 }

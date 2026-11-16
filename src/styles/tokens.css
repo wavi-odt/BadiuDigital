@@ -1,49 +1,82 @@
-/* Badiu Digital — design tokens */
+/* Badiu Digital — tokens da marca (rebrand 2026)
+   Paleta: 60% pretos, 25% osso, 10% cinzentos, 5% castanho.
+   O castanho é raro de propósito: 1 ou 2 pontos por ecrã, no máximo. */
+
 :root {
-  /* Paleta Petróleo */
-  --badiu-petrol: #0D4B57;
-  --badiu-petrol-deep: #0A3F49;
-  --badiu-ink: #061F25;
-  --badiu-ink-text: #082F37;
-  --badiu-sand: #F1E4C3;
-  --badiu-sand-light: #F7F0E0;
-  --badiu-orange: #F08A4B;
-  --badiu-muted: #BFD3CF;
-  --badiu-muted-2: #9FB9B6;
-  --badiu-line: #1C4A52;
-  --badiu-success: #5CC88C;
+  /* ── Cores da marca (valores fixos) ─────────────────────────── */
+  --noite: #0A0A0A;
+  --grafite: #1A1A1A;
+  --pedra: #3A3A3A;
+  --nevoa: #8C8C8C;
+  --osso: #F5F5F2;
+  --castanho: #8A5636;
+  --castanho-claro: #A9714A;
+  --cafe: #5A3520;
 
-  /* Utilitários de tema */
-  --badiu-kbd-bg: rgba(6, 31, 37, 0.5);
-  --badiu-tile-hover: #11535F;
+  /* ── Papéis semânticos (tema escuro, por omissão) ───────────── */
+  --bg: var(--noite);
+  --surface: var(--grafite);
+  --line: #232323;
+  --line-strong: var(--pedra);
+  --fg: var(--osso);
+  --fg-soft: #B5B5B0;
+  --muted: var(--nevoa);
+  --accent: var(--castanho);        /* botão principal, núcleo do logo */
+  --accent-em: var(--castanho-claro); /* palavras em itálico nos títulos */
+  --on-accent: var(--osso);
+  /* palavras do manifesto ainda por acender: pedra aclarada para cumprir 3:1 (texto grande) */
+  --mani-dim: #606060;
 
-  /* Tipografia */
-  --badiu-font-display: 'Bricolage Grotesque', system-ui, sans-serif;
-  --badiu-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  /* Logo */
+  --logo-core: var(--castanho);
+  --logo-b: var(--pedra);
+  --logo-rest: var(--osso);
 
-  /* Movimento */
-  --badiu-ease-out: cubic-bezier(.2, .9, .2, 1);
-  --badiu-ease-in-out: cubic-bezier(.7, 0, .2, 1);
-  --badiu-wipe-ms: 550ms;
+  /* ── Tipografia ────────────────────────────────────────────── */
+  --font-display: 'Fraunces', 'Fraunces Fallback', Georgia, 'Times New Roman', serif;
+  --font-body: 'Geist', 'Geist Fallback', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-mark: 'Bricolage Grotesque', 'Bricolage Fallback', 'Geist', system-ui, sans-serif;
 
-  /* Layout */
-  --badiu-container: 1280px;
-  --badiu-radius-lg: 32px;
-  --badiu-radius-md: 24px;
+  --fs-display: clamp(64px, 10vw, 160px);
+  --fs-h1: clamp(48px, 6vw, 72px);
+  --fs-h2: clamp(34px, 4vw, 44px);
+  --fs-h3: 24px;
+  --fs-body: 18px;
+  --fs-small: 14px;
+  --fs-label: 13px;
+
+  /* ── Motion ────────────────────────────────────────────────── */
+  --ease-badiu: cubic-bezier(.7, 0, .2, 1); /* = CustomEase "badiu" */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);  /* ≈ expo.out */
+  --ease-in: cubic-bezier(.55, .055, .675, .19); /* ≈ power3.in */
+
+  /* ── Layout ────────────────────────────────────────────────── */
+  --gx: max(clamp(16px, 4vw, 56px), env(safe-area-inset-left, 0px));
+  --gxr: max(clamp(16px, 4vw, 56px), env(safe-area-inset-right, 0px));
+  --radius-lg: 28px;
+  --radius-md: 18px;
+
+  color-scheme: dark;
 }
 
-/* ---------- Tema claro ---------- */
+/* ── Tema claro ──────────────────────────────────────────────── */
 html[data-theme="light"] {
-  --badiu-ink:         #F5EDD8;   /* fundo → areia quente clara */
-  --badiu-petrol:      #FFFFFF;   /* superfícies → branco */
-  --badiu-petrol-deep: #F5F4F0;   /* superfícies profundas → branco quente */
-  --badiu-sand:        #061F25;   /* texto principal → tinta escura */
-  --badiu-sand-light:  #FFFFFF;   /* superfícies de cartão → branco */
-  --badiu-muted:       #2D6B77;   /* texto auxiliar → petróleo legível em fundo claro */
-  --badiu-muted-2:     #3A5F67;   /* texto muito auxiliar */
-  --badiu-line:        #E2DDD4;   /* bordas → quente suave */
+  --bg: var(--osso);
+  --surface: #EBEBE7;
+  --line: #DEDEDA;
+  --line-strong: #D2D2D0;
+  --fg: var(--noite);
+  --fg-soft: #3A3A3A;
+  --muted: #636363;           /* névoa escurecida para AA em fundo osso e nas superfícies */
+  --mani-dim: #8A8A86;
+  --accent: var(--cafe);
+  --accent-em: var(--cafe);
+  --on-accent: var(--osso);
 
-  /* Utilitários de tema (light) */
-  --badiu-kbd-bg: rgba(13, 75, 87, 0.08);
-  --badiu-tile-hover: #F0ECE3;
+  --logo-core: var(--cafe);
+  --logo-b: #D2D2D0;
+  --logo-rest: #0E0E0E;
+
+  color-scheme: light;
 }

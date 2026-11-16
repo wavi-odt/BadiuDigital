@@ -1,0 +1,109 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - link "Badiu Digital" [ref=f6e5]:
+        - /url: /
+        - generic [ref=f6e13]: badiu
+      - generic [ref=f6e14]:
+        - button "Mudar idioma" [ref=f6e16]: PT
+        - button "Mudar para tema escuro" [ref=f6e17]
+        - button "Pesquisar (Ctrl+K)" [ref=f6e20]
+        - link "Contacto" [ref=f6e24]:
+          - /url: /contacto
+  - main [ref=f6e25]:
+    - generic [ref=f6e27]:
+      - generic [aria-hidden]:
+        - generic:
+          - generic: "01"
+          - generic: "02"
+          - generic: "03"
+      - generic [ref=f6e28]:
+        - generic [ref=f6e29]: Serviços
+        - heading "O que fazemos." [level=1] [ref=f6e30]:
+          - generic [ref=f6e31]:
+            - generic [ref=f6e32]: O
+            - generic [ref=f6e34]: que
+            - generic [ref=f6e36]: fazemos.
+        - paragraph [ref=f6e38]: Construímos produtos digitais de raiz — desde a identidade visual à infraestrutura.
+      - generic [ref=f6e40]: scroll
+    - status [ref=f6e43]:
+      - generic [ref=f6e48]: A carregar…
+    - generic [ref=f6e51]:
+      - generic [ref=f6e52]: Porquê o Badiu
+      - heading "Um estúdio diferente." [level=2] [ref=f6e53]
+      - generic [ref=f6e54]:
+        - generic [ref=f6e55]:
+          - generic [ref=f6e56]: → 1 equipa
+          - heading "Sem intermediários." [level=3] [ref=f6e57]
+          - paragraph [ref=f6e58]: Falas diretamente com quem desenha e escreve o código. Sem account managers, sem telefones estragados.
+        - generic [ref=f6e59]:
+          - generic [ref=f6e60]: Full-stack
+          - heading "Do logo ao servidor." [level=3] [ref=f6e61]
+          - paragraph [ref=f6e62]: Marca, interface, frontend, backend — tudo sai do mesmo estúdio. Sem depender de fornecedores externos.
+        - generic [ref=f6e63]:
+          - generic [ref=f6e64]: 🌍
+          - heading "Cabo Verde → Mundo." [level=3] [ref=f6e65]
+          - paragraph [ref=f6e66]: Raízes locais, padrões internacionais. Já entregámos para clientes em 3 continentes.
+    - generic [ref=f6e69]:
+      - generic [ref=f6e70]: Processo
+      - heading "Como trabalhamos." [level=2] [ref=f6e71]:
+        - generic [ref=f6e72]:
+          - generic [ref=f6e73]: Como
+          - generic [ref=f6e75]: trabalhamos.
+      - generic [ref=f6e77]:
+        - generic [ref=f6e78]:
+          - generic [ref=f6e79]: "01"
+          - heading "Briefing" [level=3] [ref=f6e80]
+          - paragraph [ref=f6e81]: Ouvimos. Percebemos o negócio, o contexto e os objetivos antes de escrever uma linha de código.
+        - generic [ref=f6e82]:
+          - generic [ref=f6e83]: "02"
+          - heading "Design" [level=3] [ref=f6e84]
+          - paragraph [ref=f6e85]: Construímos protótipos visuais de alta fidelidade. Cada decisão tem uma razão.
+        - generic [ref=f6e86]:
+          - generic [ref=f6e87]: "03"
+          - heading "Desenvolvimento" [level=3] [ref=f6e88]
+          - paragraph [ref=f6e89]: Código limpo, semântico e performativo. Sem frameworks desnecessárias, sem atalhos.
+        - generic [ref=f6e90]:
+          - generic [ref=f6e91]: "04"
+          - heading "Lançamento" [level=3] [ref=f6e92]
+          - paragraph [ref=f6e93]: Deploy, testes finais e acompanhamento pós-lançamento. Ficamos ao lado até tudo funcionar.
+    - generic [ref=f6e96]:
+      - generic [ref=f6e97]: Contacto
+      - heading "Tens uma ideia?" [level=2] [ref=f6e98]:
+        - generic [ref=f6e99]: Tens uma
+        - generic [ref=f6e100]: ideia?
+      - paragraph [ref=f6e101]: "Conta-nos o que tens em mente: um site, uma app ou um produto inteiro."
+      - generic [ref=f6e102]:
+        - link "Começar um projeto →" [ref=f6e103]:
+          - /url: /contacto
+        - link "Conhecer a equipa →" [ref=f6e104]:
+          - /url: /equipa
+  - contentinfo [ref=f6e105]:
+    - generic [ref=f6e106]:
+      - generic [ref=f6e107]:
+        - generic [ref=f6e108]:
+          - link "badiu" [ref=f6e109]:
+            - /url: /
+          - paragraph [ref=f6e118]: Estúdio digital · Santiago, Cabo Verde
+        - generic [ref=f6e119]:
+          - generic [ref=f6e120]: Navegação
+          - navigation [ref=f6e121]:
+            - link "Projetos" [ref=f6e122]:
+              - /url: /projetos
+            - link "Equipa" [ref=f6e123]:
+              - /url: /equipa
+            - link "Contacto" [ref=f6e124]:
+              - /url: /contacto
+        - generic [ref=f6e125]: Serviços
+      - generic [ref=f6e127]: © 2026 Badiu Digital
+  - navigation "Navegação principal" [ref=f6e128]:
+    - link "Início" [ref=f6e130]:
+      - /url: /
+    - link "Projetos" [ref=f6e132]:
+      - /url: /projetos
+    - link "Serviços" [ref=f6e134]:
+      - /url: /servicos
+    - link "Equipa" [ref=f6e136]:
+      - /url: /equipa
+    - link "Contacto" [ref=f6e138]:
+      - /url: /contacto

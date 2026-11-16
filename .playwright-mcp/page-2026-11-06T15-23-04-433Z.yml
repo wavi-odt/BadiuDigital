@@ -1,0 +1,243 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - link "Badiu Digital" [ref=f6e5]:
+        - /url: /
+        - generic [ref=f6e13]: badiu
+      - generic [ref=f6e14]:
+        - button "Mudar idioma" [ref=f6e16]: PT
+        - button "Mudar para tema escuro" [ref=f6e17]
+        - button "Pesquisar (Ctrl+K)" [ref=f6e20]
+        - link "Contacto" [ref=f6e24]:
+          - /url: /contacto
+  - main [ref=f6e25]:
+    - generic [ref=f6e27]:
+      - generic [aria-hidden]:
+        - generic:
+          - generic: "01"
+          - generic: "02"
+          - generic: "03"
+      - generic [ref=f6e28]:
+        - generic [ref=f6e29]: Serviços
+        - heading "O que fazemos." [level=1] [ref=f6e30]:
+          - generic [ref=f6e31]:
+            - generic [ref=f6e32]: O
+            - generic [ref=f6e34]: que
+            - generic [ref=f6e36]: fazemos.
+        - paragraph [ref=f6e38]: Construímos produtos digitais de raiz — desde a identidade visual à infraestrutura.
+      - generic [ref=f6e40]: scroll
+    - region "Serviços" [ref=f6e139]:
+      - generic [ref=f6e140]:
+        - generic [ref=f6e142]:
+          - generic [aria-hidden]: "01"
+          - generic [ref=f6e143]:
+            - generic [ref=f6e144]: "01"
+            - heading "Sites & marcas" [level=2] [ref=f6e145]
+            - paragraph [ref=f6e146]: Sites institucionais e portefólios rápidos, bonitos e fáceis de gerir, com a identidade certa.
+            - generic [ref=f6e147]:
+              - generic [ref=f6e148]: O que inclui
+              - list [ref=f6e149]:
+                - listitem [ref=f6e150]: Estratégia de marca
+                - listitem [ref=f6e151]: Design de logótipo e identidade visual
+                - listitem [ref=f6e152]: Site responsivo (React ou CMS)
+                - listitem [ref=f6e153]: SEO técnico e meta tags
+                - listitem [ref=f6e154]: Domínio, alojamento e SSL
+            - generic [ref=f6e155]:
+              - generic [ref=f6e156]:
+                - link "Design" [ref=f6e157]:
+                  - /url: /projetos?tag=Design
+                - link "React" [ref=f6e158]:
+                  - /url: /projetos?tag=React
+                - link "SEO" [ref=f6e159]:
+                  - /url: /projetos?tag=SEO
+              - link "Começar um projeto →" [ref=f6e160]:
+                - /url: /contacto
+        - generic [aria-hidden]:
+          - generic:
+            - generic [aria-hidden]: "02"
+            - generic:
+              - generic: "02"
+              - heading [level=2]: Apps & plataformas
+              - paragraph: Aplicações web completas, do frontend à API e à base de dados, pensadas para crescer.
+              - generic:
+                - generic: O que inclui
+                - list:
+                  - listitem: Arquitetura frontend (React + Vite)
+                  - listitem: API REST (Spring Boot)
+                  - listitem: Base de dados relacional (MySQL)
+                  - listitem: Autenticação e controlo de acessos
+                  - listitem: Painel de administração
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /projetos?tag=React
+                    - text: React
+                  - link:
+                    - /url: /projetos?tag=Spring%20Boot
+                    - text: Spring Boot
+                  - link:
+                    - /url: /projetos?tag=MySQL
+                    - text: MySQL
+                - link:
+                  - /url: /contacto
+                  - text: Começar um projeto →
+        - generic [aria-hidden]:
+          - generic:
+            - generic [aria-hidden]: "03"
+            - generic:
+              - generic: "03"
+              - heading [level=2]: Infra & deploy
+              - paragraph: Alojamento, CI/CD e monitorização para o teu produto estar sempre no ar.
+              - generic:
+                - generic: O que inclui
+                - list:
+                  - listitem: Setup de servidor VPS ou cloud
+                  - listitem: Pipeline CI/CD (GitHub Actions)
+                  - listitem: Configuração de domínio e SSL
+                  - listitem: Monitorização e alertas
+                  - listitem: Backups automáticos
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /projetos?tag=Docker
+                    - text: Docker
+                  - link:
+                    - /url: /projetos?tag=Linux
+                    - text: Linux
+                  - link:
+                    - /url: /projetos?tag=CI%2FCD
+                    - text: CI/CD
+                - link:
+                  - /url: /contacto
+                  - text: Começar um projeto →
+    - generic [ref=f6e51]:
+      - generic [ref=f6e52]: Porquê o Badiu
+      - heading "Um estúdio diferente." [level=2] [ref=f6e53]
+      - generic [ref=f6e54]:
+        - generic [ref=f6e55]:
+          - generic [ref=f6e56]: → 1 equipa
+          - heading "Sem intermediários." [level=3] [ref=f6e57]
+          - paragraph [ref=f6e58]: Falas diretamente com quem desenha e escreve o código. Sem account managers, sem telefones estragados.
+        - generic [ref=f6e59]:
+          - generic [ref=f6e60]: Full-stack
+          - heading "Do logo ao servidor." [level=3] [ref=f6e61]
+          - paragraph [ref=f6e62]: Marca, interface, frontend, backend — tudo sai do mesmo estúdio. Sem depender de fornecedores externos.
+        - generic [ref=f6e63]:
+          - generic [ref=f6e64]: 🌍
+          - heading "Cabo Verde → Mundo." [level=3] [ref=f6e65]
+          - paragraph [ref=f6e66]: Raízes locais, padrões internacionais. Já entregámos para clientes em 3 continentes.
+    - generic [ref=f6e69]:
+      - generic [ref=f6e70]: Processo
+      - heading "Como trabalhamos." [level=2] [ref=f6e71]:
+        - generic [ref=f6e72]:
+          - generic [ref=f6e73]: Como
+          - generic [ref=f6e75]: trabalhamos.
+      - generic [ref=f6e77]:
+        - generic [ref=f6e78]:
+          - generic [ref=f6e79]: "01"
+          - heading "Briefing" [level=3] [ref=f6e80]
+          - paragraph [ref=f6e81]: Ouvimos. Percebemos o negócio, o contexto e os objetivos antes de escrever uma linha de código.
+        - generic [ref=f6e82]:
+          - generic [ref=f6e83]: "02"
+          - heading "Design" [level=3] [ref=f6e84]
+          - paragraph [ref=f6e85]: Construímos protótipos visuais de alta fidelidade. Cada decisão tem uma razão.
+        - generic [ref=f6e86]:
+          - generic [ref=f6e87]: "03"
+          - heading "Desenvolvimento" [level=3] [ref=f6e88]
+          - paragraph [ref=f6e89]: Código limpo, semântico e performativo. Sem frameworks desnecessárias, sem atalhos.
+        - generic [ref=f6e90]:
+          - generic [ref=f6e91]: "04"
+          - heading "Lançamento" [level=3] [ref=f6e92]
+          - paragraph [ref=f6e93]: Deploy, testes finais e acompanhamento pós-lançamento. Ficamos ao lado até tudo funcionar.
+    - generic [ref=f6e163]:
+      - generic [ref=f6e164]:
+        - generic [ref=f6e165]: Trabalho recente
+        - link "Ver todos os projetos →" [ref=f6e166]:
+          - /url: /projetos
+      - generic [ref=f6e167]:
+        - link "Batuku Batuku Em desenvolvimento Descoberta e monetização para artistas independentes cabo-verdianos. React · Spring Boot · MySQL ↗" [ref=f6e171]:
+          - /url: /projetos/batuku
+          - generic [ref=f6e172]: Batuku
+          - generic [ref=f6e174]:
+            - generic [ref=f6e175]:
+              - generic [ref=f6e176]: Batuku
+              - generic [ref=f6e177]: Em desenvolvimento
+            - paragraph [ref=f6e178]: Descoberta e monetização para artistas independentes cabo-verdianos.
+            - generic [ref=f6e179]:
+              - generic [ref=f6e180]: React · Spring Boot · MySQL
+              - generic [ref=f6e181]: ↗
+        - link "Fla Fla Em desenvolvimento Dicionário e tradutor Kriolu ↔ Português, com extensão para o Chrome. React · API · Chrome Extension ↗" [ref=f6e185]:
+          - /url: /projetos/fla
+          - generic [ref=f6e186]: Fla
+          - generic [ref=f6e188]:
+            - generic [ref=f6e189]:
+              - generic [ref=f6e190]: Fla
+              - generic [ref=f6e191]: Em desenvolvimento
+            - paragraph [ref=f6e192]: Dicionário e tradutor Kriolu ↔ Português, com extensão para o Chrome.
+            - generic [ref=f6e193]:
+              - generic [ref=f6e194]: React · API · Chrome Extension
+              - generic [ref=f6e195]: ↗
+        - 'link "0district 0district Cliente Site para uma produtora: identidade, catálogo e contactos. React · CMS ↗" [ref=f6e199]':
+          - /url: /projetos/0district
+          - generic [ref=f6e200]: 0district
+          - generic [ref=f6e202]:
+            - generic [ref=f6e203]:
+              - generic [ref=f6e204]: 0district
+              - generic [ref=f6e205]: Cliente
+            - paragraph [ref=f6e206]: "Site para uma produtora: identidade, catálogo e contactos."
+            - generic [ref=f6e207]:
+              - generic [ref=f6e208]: React · CMS
+              - generic [ref=f6e209]: ↗
+    - generic [ref=f6e96]:
+      - generic [ref=f6e97]: Contacto
+      - heading "Tens uma ideia?" [level=2] [ref=f6e98]:
+        - generic [ref=f6e99]: Tens uma
+        - generic [ref=f6e100]: ideia?
+      - paragraph [ref=f6e101]: "Conta-nos o que tens em mente: um site, uma app ou um produto inteiro."
+      - generic [ref=f6e102]:
+        - link "Começar um projeto →" [ref=f6e103]:
+          - /url: /contacto
+        - link "Conhecer a equipa →" [ref=f6e104]:
+          - /url: /equipa
+  - contentinfo [ref=f6e105]:
+    - generic [ref=f6e106]:
+      - generic [ref=f6e107]:
+        - generic [ref=f6e108]:
+          - link "badiu" [ref=f6e109]:
+            - /url: /
+          - paragraph [ref=f6e118]: Estúdio digital · Santiago, Cabo Verde
+          - generic [ref=f6e210]:
+            - link "hello@badiudigital.com" [ref=f6e211]:
+              - /url: mailto:hello@badiudigital.com
+            - link "Instagram" [ref=f6e212]:
+              - /url: https://instagram.com/badiudigital
+        - generic [ref=f6e119]:
+          - generic [ref=f6e120]: Navegação
+          - navigation [ref=f6e121]:
+            - link "Projetos" [ref=f6e122]:
+              - /url: /projetos
+            - link "Equipa" [ref=f6e123]:
+              - /url: /equipa
+            - link "Contacto" [ref=f6e124]:
+              - /url: /contacto
+        - generic [ref=f6e125]:
+          - generic [ref=f6e126]: Serviços
+          - generic [ref=f6e213]:
+            - link "Sites & marcas" [ref=f6e214]:
+              - /url: /contacto
+            - link "Apps & plataformas" [ref=f6e215]:
+              - /url: /contacto
+            - link "Infra & deploy" [ref=f6e216]:
+              - /url: /contacto
+      - generic [ref=f6e127]: © 2026 Badiu Digital
+  - navigation "Navegação principal" [ref=f6e128]:
+    - link "Início" [ref=f6e130]:
+      - /url: /
+    - link "Projetos" [ref=f6e132]:
+      - /url: /projetos
+    - link "Serviços" [ref=f6e134]:
+      - /url: /servicos
+    - link "Equipa" [ref=f6e136]:
+      - /url: /equipa
+    - link "Contacto" [ref=f6e138]:
+      - /url: /contacto

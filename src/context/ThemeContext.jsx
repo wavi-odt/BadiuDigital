@@ -8,7 +8,7 @@ function getInitialTheme() {
   if (typeof window === 'undefined') return 'dark';
   const saved = localStorage.getItem(KEY);
   if (saved === 'light' || saved === 'dark') return saved;
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  return 'dark';
 }
 
 export function ThemeProvider({ children }) {
@@ -16,7 +16,7 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document.getElementById('meta-theme-color')?.setAttribute('content', theme === 'light' ? '#F5EDD8' : '#061F25');
+    document.getElementById('meta-theme-color')?.setAttribute('content', theme === 'light' ? '#F5F5F2' : '#0A0A0A');
     localStorage.setItem(KEY, theme);
   }, [theme]);
 

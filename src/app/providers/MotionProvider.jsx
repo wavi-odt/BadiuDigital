@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import Lenis from 'lenis';
 import { gsap, ScrollTrigger } from '@/motion/gsap';
 import { useReducedMotion } from '@/motion/useReducedMotion';
+import { startVelocitySkew } from '@/motion/velocitySkew';
 
 const MotionContext = createContext({ lenis: null, reduced: false, scrollTo: () => {} });
 
@@ -24,9 +25,11 @@ export function MotionProvider({ children }) {
     const tick = (time) => instance.raf(time * 1000);
     gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
+    const stopSkew = startVelocitySkew(instance);
     setLenis(instance);
 
     return () => {
+      stopSkew();
       gsap.ticker.remove(tick);
       gsap.ticker.lagSmoothing(500, 33);
       instance.destroy();

@@ -209,7 +209,7 @@
     "services": {
       "title_a": "What we",
       "title_b": "weave.",
-      "label": "{{count}} services · drag with the scroll",
+      "label": "{{count}} services · scroll to advance",
       "label_mobile": "{{count}} services",
       "panel": "Service {{n}} of {{total}}"
     },

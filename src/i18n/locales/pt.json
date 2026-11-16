@@ -209,7 +209,7 @@
     "services": {
       "title_a": "O que",
       "title_b": "tecemos.",
-      "label": "{{count}} serviços · arrasta com o scroll",
+      "label": "{{count}} serviços · scroll para avançar",
       "label_mobile": "{{count}} serviços",
       "panel": "Serviço {{n}} de {{total}}"
     },

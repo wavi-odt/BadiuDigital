@@ -209,7 +209,7 @@
     "services": {
       "title_a": "Kuze ki nu ta",
       "title_b": "tesi.",
-      "label": "{{count}} sirvisus · rasta ku scroll",
+      "label": "{{count}} sirvisus · scroll pa avansa",
       "label_mobile": "{{count}} sirvisus",
       "panel": "Sirvisu {{n}} di {{total}}"
     },

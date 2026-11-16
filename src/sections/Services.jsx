@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { gsap, useGSAP } from '@/motion/gsap';
 import { MQ } from '@/motion/useMediaQuery';
+import { useMotion } from '@/app/providers/MotionProvider';
 import { useServices } from '@/hooks/useServices';
 import { CELLS, STROKE, TIGHT_VIEWBOX } from '@/components/Logo';
 import Label from '@/components/Label';
@@ -23,7 +24,7 @@ export function PanelVisual({ pattern }) {
 }
 
 /**
- * Serviços: secção pinned com scroll horizontal (desktop). Cada painel entra rodado em 3D
+ * Serviços: secção pinned onde o scroll mostra um card de cada vez (desktop). Cada painel entra rodado em 3D
  * (rotateY −14°, escala 0.9), endireita-se ao centro e volta a rodar ao sair; o texto
  * entra em cascata; o visual abre com clip-path em losango e os losangos montam-se do centro.
  * Em mobile: sem pin, os painéis empilham-se e sobem ao entrar.
@@ -34,6 +35,12 @@ export default function Services() {
   const services = data ?? [];
   const root = useRef(null);
   const track = useRef(null);
+  const stRef = useRef(null);
+  const { scrollTo, lenis } = useMotion();
+  const goTo = (i) => {
+    const st = stRef.current?.tl.scrollTrigger;
+    if (st) scrollTo(st.start + stRef.current.rest[i] * (st.end - st.start), { duration: 1.2 });
+  };
 
   useGSAP(() => {
     if (!services.length) return undefined;
@@ -41,20 +48,57 @@ export default function Services() {
     const panels = () => gsap.utils.toArray('[data-panel]', track.current);
 
     mm.add(`${MQ.desktop} and ${MQ.motion}`, () => {
-      const dist = () => track.current.scrollWidth - window.innerWidth;
-      const tween = gsap.to(track.current, {
-        x: () => -dist(), ease: 'none',
-        scrollTrigger: { trigger: root.current, start: 'top 8%', end: () => `+=${dist()}`, pin: true, scrub: 0.8, invalidateOnRefresh: true, anticipatePin: 1 },
+      // Um card de cada vez: a secção fica pinned e o scroll avança uma timeline em que
+      // o card atual sai (sobe, roda ligeiramente e desvanece) enquanto o seguinte entra.
+      const ps = panels();
+      const n = ps.length;
+      // pontos de repouso (em tempo da timeline): o scroll assenta sempre num card inteiro
+      const rest = ps.map((_, k) => (k === 0 ? 0 : k === n - 1 ? k + 0.6 : k + 0.45) / n);
+      const tl = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: {
+          trigger: root.current, start: 'top 6%', end: () => `+=${n * window.innerHeight * 0.85}`,
+          pin: true, scrub: 0.7, anticipatePin: 1, invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            const cur = rest.reduce((best, r, i) => (Math.abs(r - self.progress) < Math.abs(rest[best] - self.progress) ? i : best), 0);
+            root.current.querySelectorAll('[data-dot]').forEach((d, i) => d.classList.toggle('is-on', i === cur));
+          },
+        },
       });
-      panels().forEach((p) => {
-        const st = (start, end) => ({ containerAnimation: tween, trigger: p, start, end, scrub: true });
-        gsap.fromTo(p, { rotateY: -14, scale: 0.9, transformOrigin: '0% 50%' }, { rotateY: 0, scale: 1, ease: 'none', scrollTrigger: st('left right', 'left 30%') });
-        gsap.to(p, { rotateY: 8, scale: 0.94, transformOrigin: '100% 50%', ease: 'none', immediateRender: false, scrollTrigger: st('right 45%', 'right left') });
-        gsap.from(p.querySelectorAll('[data-txt] > *'), { y: 70, autoAlpha: 0, stagger: 0.12, ease: 'none', scrollTrigger: st('left 85%', 'left 25%') });
-        gsap.from(p.querySelector('[data-num]'), { xPercent: 60, ease: 'none', scrollTrigger: st('left right', 'right left') });
-        gsap.fromTo(p.querySelector('[data-vis]'), { clipPath: 'polygon(50% 45%, 55% 50%, 50% 55%, 45% 50%)' }, { clipPath: 'polygon(50% -10%, 110% 50%, 50% 110%, -10% 50%)', ease: 'none', scrollTrigger: st('left 95%', 'left 35%') });
-        gsap.from(p.querySelectorAll('[data-svc-cell]'), { scale: 0, transformOrigin: '50% 50%', ease: 'none', stagger: { each: 0.02, from: 'center' }, scrollTrigger: st('left 90%', 'left 30%') });
+      ps.forEach((p, k) => {
+        if (k > 0) {
+          const at = k - 0.15;
+          tl.fromTo(p, { autoAlpha: 0, y: 90, rotateX: -8, scale: 0.94 }, { autoAlpha: 1, y: 0, rotateX: 0, scale: 1, ease: 'power3.out', duration: 0.35 }, at)
+            .fromTo(p.querySelectorAll('[data-txt] > *'), { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.04, duration: 0.3, ease: 'power3.out' }, at + 0.05)
+            .fromTo(p.querySelectorAll('[data-svc-cell]'), { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, stagger: { each: 0.01, from: 'center' }, duration: 0.3, ease: 'back.out(1.6)' }, at + 0.08);
+        }
+        if (k < n - 1) tl.to(p, { autoAlpha: 0, y: -90, rotateX: 8, scale: 0.94, ease: 'power3.in', duration: 0.3 }, k + 0.7);
       });
+      tl.set({}, {}, n); // duração total = n
+      stRef.current = { tl, rest };
+
+      // Snap próprio (o snap do ScrollTrigger luta com o scroll suave): quando o scroll pára,
+      // assenta no card seguinte se foste para baixo, ou no anterior se foste para cima.
+      let last = 0;
+      let timer;
+      const gap = 1 / n;
+      const settle = () => {
+        const st = tl.scrollTrigger;
+        if (!st || st.progress <= 0 || st.progress >= 1) return;
+        const pr = st.progress;
+        const near = rest.reduce((b, r, i) => (Math.abs(r - pr) < Math.abs(rest[b] - pr) ? i : b), 0);
+        let target = near;
+        if (Math.abs(pr - rest[last]) < gap * 1.3) {
+          if (pr > rest[last] + 0.015) target = Math.min(last + 1, n - 1);
+          else if (pr < rest[last] - 0.015) target = Math.max(last - 1, 0);
+          else target = last;
+        }
+        last = target;
+        if (Math.abs(rest[target] - pr) > 0.004) scrollTo(st.start + rest[target] * (st.end - st.start), { duration: 0.9 });
+      };
+      const onScroll = () => { clearTimeout(timer); timer = setTimeout(settle, 140); };
+      lenis?.on('scroll', onScroll);
+      return () => { clearTimeout(timer); lenis?.off('scroll', onScroll); };
     });
 
     mm.add(`${MQ.mobile} and ${MQ.motion}`, () => {
@@ -65,7 +109,7 @@ export default function Services() {
       });
     });
     return () => mm.revert();
-  }, { scope: root, dependencies: [services.length], revertOnUpdate: true });
+  }, { scope: root, dependencies: [services.length, lenis], revertOnUpdate: true });
 
   return (
     <section ref={root} id="servicos" className="svc" aria-labelledby="svc-title">
@@ -89,8 +133,12 @@ export default function Services() {
                 </ul>
               </div>
               <div className="svc-vis" data-vis=""><PanelVisual pattern={HIGHLIGHT[i % HIGHLIGHT.length]} /></div>
-              <span className="svc-num" data-num="" aria-hidden="true">{s.number ?? String(i + 1).padStart(2, '0')}</span>
             </article>
+          ))}
+        </div>
+        <div className="svc-dots" role="group" aria-label={t('homepage.services.title_a') + ' ' + t('homepage.services.title_b')}>
+          {services.map((sv, i) => (
+            <button key={sv.id} type="button" data-dot="" className={i === 0 ? 'svc-dot is-on' : 'svc-dot'} aria-label={sv.title} onClick={() => goTo(i)} data-cursor="view" />
           ))}
         </div>
       </div>

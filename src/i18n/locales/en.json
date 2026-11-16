@@ -188,5 +188,80 @@
     "open": "open",
     "go": "let’s go",
     "talk": "talk"
+  },
+  "homepage": {
+    "hero": {
+      "label": "Digital studio · Santiago, Cape Verde",
+      "title_a": "Software with",
+      "title_b": "roots.",
+      "lead": "We design and build digital products with the care of someone weaving cloth: thread by thread, in no hurry to look like everyone else.",
+      "cta_start": "Start a project",
+      "cta_work": "See our work",
+      "scroll": "Scroll"
+    },
+    "manifesto": {
+      "label": "Manifesto",
+      "text": "In Santiago, pano di terra is made *slowly*, thread by thread, until the pattern appears. We make software the same way: every screen, every line of code and every server *woven* with intent. We bring design, engineering and infrastructure together so your product has *roots* and stands the *test of time.*"
+    },
+    "services": {
+      "title_a": "What we",
+      "title_b": "weave.",
+      "label": "{{count}} services · drag with the scroll",
+      "label_mobile": "{{count}} services",
+      "panel": "Service {{n}} of {{total}}"
+    },
+    "work": {
+      "title_a": "Selected",
+      "title_b": "work.",
+      "label": "2024 — 2026",
+      "all": "See all projects",
+      "empty": "No projects to show yet."
+    },
+    "process": {
+      "title_a": "Thread by",
+      "title_b": "thread.",
+      "label": "Process",
+      "step": "Step {{n}}",
+      "steps": [
+        {
+          "t": "Discover",
+          "d": "We listen, research and define the right problem before designing."
+        },
+        {
+          "t": "Design",
+          "d": "Prototypes and a visual system, tested early and refined with you."
+        },
+        {
+          "t": "Build",
+          "d": "Clean, reviewed code delivered in short cycles you can see."
+        },
+        {
+          "t": "Launch",
+          "d": "Deploy, measurement and maintenance. The product keeps growing."
+        }
+      ]
+    },
+    "team": {
+      "title_a": "Who",
+      "title_b": "weaves.",
+      "label": "Team",
+      "all": "Meet the team",
+      "portfolio": "See portfolio"
+    },
+    "cta": {
+      "label": "Next project",
+      "title_a": "Shall we weave something",
+      "title_b": "together?"
+    }
+  },
+  "footer2": {
+    "studio": "Studio",
+    "studio_place": "Praia, Santiago",
+    "studio_country": "Cape Verde",
+    "clock": "Time in Santiago",
+    "socials": "Social",
+    "contact": "Contact",
+    "nav": "Navigation",
+    "rights": "All rights reserved."
   }
 }

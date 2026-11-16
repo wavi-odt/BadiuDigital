@@ -188,5 +188,80 @@
     "open": "abri",
     "go": "bora",
     "talk": "papia"
+  },
+  "homepage": {
+    "hero": {
+      "label": "Stúdiu dijital · Santiagu, Kabu Verdi",
+      "title_a": "Software ku",
+      "title_b": "raís.",
+      "lead": "Nu ta dizenha i nu ta konstrui produtus dijital ku kuidadu di kenha ki ta tesi un panu: fiu a fiu, sen présa di parse ku kes otu.",
+      "cta_start": "Kumesa un prujetu",
+      "cta_work": "Odja trabadju",
+      "scroll": "Faz scroll"
+    },
+    "manifesto": {
+      "label": "Manifestu",
+      "text": "Na Santiagu, panu di téra ta fazedu *dibagar*, fiu a fiu, ti padron parse. Nu ta faze software di mésmu manera: kada ekran, kada linha di kódigu i kada servidor *tisidu* ku intenson. Nu ta djunta dizain, injenharia i infraistrutura pa bu produtu ten *raís* i aguenta *tempu.*"
+    },
+    "services": {
+      "title_a": "Kuze ki nu ta",
+      "title_b": "tesi.",
+      "label": "{{count}} sirvisus · rasta ku scroll",
+      "label_mobile": "{{count}} sirvisus",
+      "panel": "Sirvisu {{n}} di {{total}}"
+    },
+    "work": {
+      "title_a": "Trabadju",
+      "title_b": "skodjidu.",
+      "label": "2024 — 2026",
+      "all": "Odja tudu prujetus",
+      "empty": "Inda ka ten prujetu pa mostra."
+    },
+    "process": {
+      "title_a": "Fiu a",
+      "title_b": "fiu.",
+      "label": "Prusésu",
+      "step": "Etapa {{n}}",
+      "steps": [
+        {
+          "t": "Diskubri",
+          "d": "Nu ta obi, nu ta piskiza i nu ta difini prublema sértu antis di dizenha."
+        },
+        {
+          "t": "Dizenha",
+          "d": "Prototipus i sistema vizual, tistadu sedu i afinadu ku bo."
+        },
+        {
+          "t": "Konstrui",
+          "d": "Kódigu limpu, revistu i intregadu na siklus kurtu ki bu pode odja."
+        },
+        {
+          "t": "Lansa",
+          "d": "Deploy, midison i manutenson. Produtu ta kontinua ta kria."
+        }
+      ]
+    },
+    "team": {
+      "title_a": "Kenha ki ta",
+      "title_b": "tesi.",
+      "label": "Ekipa",
+      "all": "Konxe ekipa",
+      "portfolio": "Odja portefóliu"
+    },
+    "cta": {
+      "label": "Prósimu prujetu",
+      "title_a": "Nu ta tesi algun kuza",
+      "title_b": "djuntu?"
+    }
+  },
+  "footer2": {
+    "studio": "Stúdiu",
+    "studio_place": "Praia, Santiagu",
+    "studio_country": "Kabu Verdi",
+    "clock": "Ora na Santiagu",
+    "socials": "Redis",
+    "contact": "Kontatu",
+    "nav": "Navegason",
+    "rights": "Tudu direitus rezervadu."
   }
 }

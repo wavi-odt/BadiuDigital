@@ -188,5 +188,80 @@
     "open": "abrir",
     "go": "bora",
     "talk": "falar"
+  },
+  "homepage": {
+    "hero": {
+      "label": "Estúdio digital · Santiago, Cabo Verde",
+      "title_a": "Software com",
+      "title_b": "raízes.",
+      "lead": "Desenhamos e construímos produtos digitais com o cuidado de quem tece um pano: fio a fio, sem pressa de parecer igual aos outros.",
+      "cta_start": "Começar um projeto",
+      "cta_work": "Ver trabalho",
+      "scroll": "Faz scroll"
+    },
+    "manifesto": {
+      "label": "Manifesto",
+      "text": "Em Santiago, o pano di terra faz-se *devagar*, fio a fio, até o padrão aparecer. Fazemos software da mesma forma: cada ecrã, cada linha de código e cada servidor *tecidos* com intenção. Juntamos design, engenharia e infraestrutura para que o teu produto tenha *raízes* e aguente o *tempo.*"
+    },
+    "services": {
+      "title_a": "O que",
+      "title_b": "tecemos.",
+      "label": "{{count}} serviços · arrasta com o scroll",
+      "label_mobile": "{{count}} serviços",
+      "panel": "Serviço {{n}} de {{total}}"
+    },
+    "work": {
+      "title_a": "Trabalho",
+      "title_b": "selecionado.",
+      "label": "2024 — 2026",
+      "all": "Ver todos os projetos",
+      "empty": "Ainda não há projetos para mostrar."
+    },
+    "process": {
+      "title_a": "Fio a",
+      "title_b": "fio.",
+      "label": "Processo",
+      "step": "Etapa {{n}}",
+      "steps": [
+        {
+          "t": "Descobrir",
+          "d": "Ouvimos, investigamos e definimos o problema certo antes de desenhar."
+        },
+        {
+          "t": "Desenhar",
+          "d": "Protótipos e sistema visual, testados cedo e afinados contigo."
+        },
+        {
+          "t": "Construir",
+          "d": "Código limpo, revisto e entregue em ciclos curtos que podes ver."
+        },
+        {
+          "t": "Lançar",
+          "d": "Deploy, medição e manutenção. O produto continua a crescer."
+        }
+      ]
+    },
+    "team": {
+      "title_a": "Quem",
+      "title_b": "tece.",
+      "label": "Equipa",
+      "all": "Conhecer a equipa",
+      "portfolio": "Ver portefólio"
+    },
+    "cta": {
+      "label": "Próximo projeto",
+      "title_a": "Vamos tecer algo",
+      "title_b": "juntos?"
+    }
+  },
+  "footer2": {
+    "studio": "Estúdio",
+    "studio_place": "Praia, Santiago",
+    "studio_country": "Cabo Verde",
+    "clock": "Hora em Santiago",
+    "socials": "Redes",
+    "contact": "Contacto",
+    "nav": "Navegação",
+    "rights": "Todos os direitos reservados."
   }
 }

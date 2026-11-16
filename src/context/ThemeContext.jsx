@@ -16,7 +16,7 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document.getElementById('meta-theme-color')?.setAttribute('content', theme === 'light' ? '#F5EDD8' : '#061F25');
+    document.getElementById('meta-theme-color')?.setAttribute('content', theme === 'light' ? '#F5F5F2' : '#0A0A0A');
     localStorage.setItem(KEY, theme);
   }, [theme]);
 

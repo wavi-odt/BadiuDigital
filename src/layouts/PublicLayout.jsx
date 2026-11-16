@@ -8,7 +8,7 @@ import FilmGrain from '@/components/PublicComponets/FilmGrain';
 import SplashScreen from '@/components/PublicComponets/SplashScreen';
 import CommandPalette, { CommandPaletteProvider } from '@/components/PublicComponets/CommandPalette';
 import BottomNav from '@/components/PublicComponets/BottomNav';
-import { useSmoothScroll } from '@/hooks/useSmoothScroll';
+import { useMotion } from '@/app/providers/MotionProvider';
 import { useTheme } from '@/hooks/useTheme';
 
 /**
@@ -19,15 +19,11 @@ export default function PublicLayout() {
   const { pathname } = useLocation();
   const { theme } = useTheme();
   const [headerTone, setHeaderTone] = useState(() => theme === 'light' ? 'light' : 'dark');
-  const lenisRef = useSmoothScroll();
+  const { scrollTo } = useMotion();
 
   /* scroll para o topo apenas na mudança de rota */
   useEffect(() => {
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true });
-    } else {
-      window.scrollTo(0, 0);
-    }
+    scrollTo(0, { immediate: true });
     setHeaderTone(theme === 'light' ? 'light' : 'dark');
   }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 

@@ -103,7 +103,8 @@
     "status_live": "Online",
     "status_client": "Cliente",
     "status_in_dev": "Em desenvolvimento",
-    "status_coming": "Em breve"
+    "status_coming": "Em breve",
+    "empty": "Sem projetos para este filtro."
   },
   "project": {
     "breadcrumb": "Projetos",
@@ -112,7 +113,8 @@
     "view_code": "Código ↗",
     "stack": "Stack",
     "team": "Equipa",
-    "year": "Ano"
+    "year": "Ano",
+    "next": "Próximo projeto"
   },
   "contact": {
     "eyebrow": "Contacto",
@@ -162,7 +164,8 @@
     "header_nav": "Principal",
     "skip_to_content": "Saltar para o conteúdo",
     "home_link": "Badiu Digital, início",
-    "scroll_progress": "Progresso da página"
+    "scroll_progress": "Progresso da página",
+    "loading_page": "A carregar…"
   },
   "palette": {
     "title": "Paleta de comandos",

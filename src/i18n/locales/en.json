@@ -103,7 +103,8 @@
     "status_live": "Live",
     "status_client": "Client",
     "status_in_dev": "In development",
-    "status_coming": "Coming soon"
+    "status_coming": "Coming soon",
+    "empty": "No projects match this filter."
   },
   "project": {
     "breadcrumb": "Projects",
@@ -112,7 +113,8 @@
     "view_code": "Code ↗",
     "stack": "Stack",
     "team": "Team",
-    "year": "Year"
+    "year": "Year",
+    "next": "Next project"
   },
   "contact": {
     "eyebrow": "Contact",
@@ -162,7 +164,8 @@
     "header_nav": "Main",
     "skip_to_content": "Skip to content",
     "home_link": "Badiu Digital, home",
-    "scroll_progress": "Page progress"
+    "scroll_progress": "Page progress",
+    "loading_page": "Loading…"
   },
   "palette": {
     "title": "Command palette",

@@ -5,6 +5,7 @@
 @import "./tokens.css";
 @import "./ui.css";
 @import "./home.css";
+@import "./pages.css";
 /* TEMPORÁRIO: estilos das páginas antigas, até serem refeitas (Fase 3). Apagar no fim. */
 @import "./legacy.css" layer(legacy);
 

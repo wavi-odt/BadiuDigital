@@ -103,7 +103,8 @@
     "status_live": "Online",
     "status_client": "Klinti",
     "status_in_dev": "Na dizinvolvimentu",
-    "status_coming": "Em brevi"
+    "status_coming": "Em brevi",
+    "empty": "Ka ten prujetu pa es filtru."
   },
   "project": {
     "breadcrumb": "Projetu",
@@ -112,7 +113,8 @@
     "view_code": "Kódigu ↗",
     "stack": "Stack",
     "team": "Ekipa",
-    "year": "Anu"
+    "year": "Anu",
+    "next": "Prósimu prujetu"
   },
   "contact": {
     "eyebrow": "Kontatu",
@@ -162,7 +164,8 @@
     "header_nav": "Prinsipal",
     "skip_to_content": "Salta pa konteúdu",
     "home_link": "Badiu Digital, inísiu",
-    "scroll_progress": "Progresu di pájina"
+    "scroll_progress": "Progresu di pájina",
+    "loading_page": "Ta karga…"
   },
   "palette": {
     "title": "Paleta di komandus",

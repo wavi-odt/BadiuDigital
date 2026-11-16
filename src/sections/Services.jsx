@@ -8,9 +8,9 @@ import Label from '@/components/Label';
 import SplitHeading from '@/components/SplitHeading';
 
 /** Padrão de destaque por serviço: quais os losangos castanhos (índice da célula → módulo/resto). */
-const HIGHLIGHT = [{ mod: 4, rem: 0 }, { mod: 3, rem: 1 }, { mod: 5, rem: 2 }, { mod: 2, rem: 0 }];
+export const HIGHLIGHT = [{ mod: 4, rem: 0 }, { mod: 3, rem: 1 }, { mod: 5, rem: 2 }, { mod: 2, rem: 0 }];
 
-function PanelVisual({ pattern }) {
+export function PanelVisual({ pattern }) {
   return (
     <svg viewBox={TIGHT_VIEWBOX} className="svc-grid" aria-hidden="true" overflow="visible">
       {CELLS.map((c, i) => {

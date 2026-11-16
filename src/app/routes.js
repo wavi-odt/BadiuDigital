@@ -15,13 +15,13 @@ function lazyPage(loader) {
 
 export const pages = {
   home: lazyPage(() => import('@/pages/Home')),
-  projects: lazyPage(() => import('@/pages/public/ProjectsPage')),
-  project: lazyPage(() => import('@/pages/public/ProjectPage')),
-  services: lazyPage(() => import('@/pages/public/ServicesPage')),
-  team: lazyPage(() => import('@/pages/public/TeamPage')),
-  member: lazyPage(() => import('@/pages/public/MemberPage')),
-  contact: lazyPage(() => import('@/pages/public/ContactPage')),
-  notFound: lazyPage(() => import('@/pages/public/NotFoundPage')),
+  projects: lazyPage(() => import('@/pages/Projetos')),
+  project: lazyPage(() => import('@/pages/Projeto')),
+  services: lazyPage(() => import('@/pages/Servicos')),
+  team: lazyPage(() => import('@/pages/Equipa')),
+  member: lazyPage(() => import('@/pages/Membro')),
+  contact: lazyPage(() => import('@/pages/Contacto')),
+  notFound: lazyPage(() => import('@/pages/NotFound')),
   // folha de marca: só em desenvolvimento, fica fora do build de produção
   brand: import.meta.env.DEV ? lazyPage(() => import('@/pages/dev/BrandSheet')) : null,
 };

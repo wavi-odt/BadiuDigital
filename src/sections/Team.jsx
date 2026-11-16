@@ -10,7 +10,7 @@ import TLink from '@/components/TLink';
 import { ROUTES } from '@/constants/routes';
 
 /** Máscara de losangos (SVG) que revela a foto do centro para fora. */
-function DiamondMask({ id }) {
+export function DiamondMask({ id }) {
   return (
     <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
       <clipPath id={id} clipPathUnits="objectBoundingBox">

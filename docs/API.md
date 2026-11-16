@@ -39,7 +39,7 @@ Ordenados por `number`.
 
 ```json
 [
-  { "id": 1, "number": "01", "title": "Sites & marcas", "description": "…", "tags": ["Design", "React", "SEO"] }
+  { "id": 1, "number": "01", "title": "Design", "description": "…", "tags": ["Marca", "UI / UX", "Motion"] }
 ]
 ```
 

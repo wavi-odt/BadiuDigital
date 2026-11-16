@@ -23,8 +23,7 @@
   .hero-veil {
     position: absolute; inset: 0; pointer-events: none;
     background:
-      radial-gradient(ellipse 70% 80% at 18% 85%, color-mix(in srgb, var(--bg) 92%, transparent), color-mix(in srgb, var(--bg) 35%, transparent) 60%, transparent 85%),
-      linear-gradient(transparent 70%, var(--bg));
+      radial-gradient(ellipse 70% 80% at 18% 85%, color-mix(in srgb, var(--bg) 70%, transparent), color-mix(in srgb, var(--bg) 25%, transparent) 60%, transparent 85%);
   }
   .hero-in { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 30px; width: 100%; }
   .hero-title { font-size: clamp(64px, 11.5vw, 200px); line-height: .88; letter-spacing: -0.045em; }
@@ -196,7 +195,7 @@
   .cta-button { font-size: 17px; padding: 22px 34px; }
 
   /* ── Rodapé ─────────────────────────────────────────────── */
-  .foot { position: relative; z-index: 2; background: var(--bg); }
+  .foot { position: relative; z-index: 2; }
   .foot-grid {
     display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px;
     padding-top: 96px; padding-bottom: 40px; font-size: 15px; color: var(--fg-soft);

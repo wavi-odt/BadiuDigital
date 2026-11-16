@@ -3,6 +3,7 @@ precision highp float;
 uniform vec2 uRes;
 uniform float uTime;
 uniform vec2 uMouse;       // 0..1
+uniform vec2 uCenter;      // centro do foco (0..1, y para cima)
 uniform vec3 uBg;          // cor de base (noite)
 uniform vec3 uA;           // castanho escuro (sombra do brilho)
 uniform vec3 uB;           // castanho (núcleo do brilho)
@@ -41,7 +42,7 @@ void main() {
   float f = fbm(p * 1.1 + 3.2 * r);
 
   // brilho principal: um foco que segue levemente o rato
-  vec2 c = vec2(0.28 + (uMouse.x - 0.5) * 0.12, 0.2 + (uMouse.y - 0.5) * 0.12);
+  vec2 c = uCenter + (uMouse - 0.5) * 0.12;
   float d = length((uv - c) * vec2(asp, 1.0));
   float glow = smoothstep(uSpread, 0.0, d);
   float field = glow * (0.55 + 0.9 * f) + (f - 0.5) * 0.25 * glow;

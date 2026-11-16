@@ -8,6 +8,7 @@ import Navbar from '@/components/Navbar';
 import ScrollProgress from '@/components/ScrollProgress';
 import Cursor from '@/components/Cursor';
 import Grain from '@/components/Grain';
+import SiteBackground from '@/components/SiteBackground';
 import Preloader from '@/components/Preloader';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
@@ -42,6 +43,7 @@ export default function Layout() {
   return (
     <SearchProvider>
       <a href="#conteudo" className="skip-link">{t('ui.skip_to_content')}</a>
+      <SiteBackground />
       <Preloader />
       <ScrollProgress />
       <Navbar />

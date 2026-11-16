@@ -261,6 +261,11 @@
   .grainbg-wrap, .grainbg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
   .grainbg canvas { display: block; width: 100% !important; height: 100% !important; }
   .grainbg { position: absolute; }
+  /* fundo global: camada fixa atrás de tudo */
+  .site-bg { position: fixed; inset: 0; z-index: -1; }
+  .site-bg .grainbg canvas { image-rendering: auto; }
+  html[data-theme="light"] .grainbg-static { background: radial-gradient(ellipse 60% 70% at 28% 20%, #E6D6C4 0%, #EFE7DD 45%, transparent 75%), var(--osso); }
+  html[data-theme="light"] .grainbg-static::after { mix-blend-mode: multiply; opacity: .25; }
   /* fallback estático: foco quente + grão SVG, igual ao WebGL parado */
   .grainbg-static {
     position: absolute; inset: 0;

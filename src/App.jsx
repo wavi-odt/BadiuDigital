@@ -1,15 +1,18 @@
-import { PageTransitionProvider } from '@/context/PageTransitionContext';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { MotionProvider } from '@/app/providers/MotionProvider';
-import AppRoutes from '@/routes/AppRoutes';
+import { IntroProvider } from '@/app/providers/IntroProvider';
+import { TransitionProvider } from '@/app/providers/TransitionProvider';
+import AppRouter from '@/app/router';
 
 export default function App() {
   return (
     <ThemeProvider>
       <MotionProvider>
-        <PageTransitionProvider>
-          <AppRoutes />
-        </PageTransitionProvider>
+        <IntroProvider>
+          <TransitionProvider>
+            <AppRouter />
+          </TransitionProvider>
+        </IntroProvider>
       </MotionProvider>
     </ThemeProvider>
   );

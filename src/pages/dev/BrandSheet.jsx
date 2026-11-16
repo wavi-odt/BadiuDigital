@@ -3,6 +3,11 @@ import Logo from '@/components/Logo';
 import { gsap, useGSAP } from '@/motion/gsap';
 import { useMotion } from '@/app/providers/MotionProvider';
 import { useTheme } from '@/hooks/useTheme';
+import { useSplitReveal } from '@/motion/useSplitReveal';
+import { useVelocitySkew } from '@/motion/velocitySkew';
+import Label from '@/components/Label';
+import Magnetic from '@/components/Magnetic';
+import TLink from '@/components/TLink';
 
 const SWATCHES = ['noite', 'grafite', 'pedra', 'nevoa', 'osso', 'castanho', 'castanho-claro', 'cafe'];
 
@@ -81,6 +86,8 @@ export default function BrandSheet() {
           </div>
         </div>
       </section>
+
+      <MotionDemo />
     </div>
   );
 }
@@ -90,3 +97,38 @@ const btn = {
   background: 'transparent', color: 'var(--fg)', boxShadow: 'inset 0 0 0 1px var(--line-strong)',
 };
 const tile = { display: 'flex', alignItems: 'center', gap: 16, padding: '28px 32px', borderRadius: 18, boxShadow: 'inset 0 0 0 1px var(--line)' };
+
+/** Fase 1: H2 carácter a carácter, skew por velocidade, etiquetas a decifrar, botões magnéticos e etiquetas do cursor */
+function RevealH2({ children }) {
+  const ref = useRef(null);
+  useSplitReveal(ref);
+  useVelocitySkew(ref);
+  return <h2 ref={ref} className="t-h1" style={{ fontSize: 'clamp(44px, 6vw, 96px)', lineHeight: 0.95 }}>{children}</h2>;
+}
+
+function MotionDemo() {
+  return (
+    <section style={{ display: 'grid', gap: '40vh', paddingBottom: '30vh' }}>
+      <div style={{ display: 'grid', gap: 28 }}>
+        <Label>Fase 1 · motion global</Label>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          <Magnetic><TLink to="/contacto" className="button button-primary" data-cursor="go">Começar um projeto →</TLink></Magnetic>
+          <Magnetic><TLink to="/projetos" className="button button-outline" data-cursor="view">Ver trabalho</TLink></Magnetic>
+          <TLink to="/equipa" className="button button-light" data-cursor="open">Abrir equipa</TLink>
+        </div>
+      </div>
+      <div style={{ display: 'grid', gap: 20 }}>
+        <Label>Serviços · 4 de 4</Label>
+        <RevealH2>O que <em>tecemos.</em></RevealH2>
+      </div>
+      <div style={{ display: 'grid', gap: 20 }}>
+        <Label>2024 — 2026</Label>
+        <RevealH2>Trabalho <em>selecionado.</em></RevealH2>
+      </div>
+      <div style={{ display: 'grid', gap: 20 }}>
+        <Label>Processo</Label>
+        <RevealH2>Fio a <em>fio.</em></RevealH2>
+      </div>
+    </section>
+  );
+}

@@ -255,7 +255,17 @@
       "label": "Next project",
       "title_a": "Shall we weave something",
       "title_b": "together?"
-    }
+    },
+    "phases": [
+      "Start",
+      "Manifesto",
+      "Services",
+      "Work",
+      "Process",
+      "Team",
+      "Contact"
+    ],
+    "phases_label": "Page phases"
   },
   "footer2": {
     "studio": "Studio",

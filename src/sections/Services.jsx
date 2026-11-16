@@ -58,7 +58,7 @@ export default function Services() {
         defaults: { ease: 'none' },
         scrollTrigger: {
           trigger: root.current, start: 'top 6%', end: () => `+=${n * window.innerHeight * 0.85}`,
-          pin: true, scrub: 0.7, anticipatePin: 1, invalidateOnRefresh: true,
+          pin: true, scrub: 0.7, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: 2,
           onUpdate: (self) => {
             const cur = rest.reduce((best, r, i) => (Math.abs(r - self.progress) < Math.abs(rest[best] - self.progress) ? i : best), 0);
             root.current.querySelectorAll('[data-dot]').forEach((d, i) => d.classList.toggle('is-on', i === cur));
@@ -76,6 +76,11 @@ export default function Services() {
       });
       tl.set({}, {}, n); // duração total = n
       stRef.current = { tl, rest };
+      const host = root.current;
+      host.__phase = () => {
+        const st = tl.scrollTrigger;
+        return { start: st.start, end: st.end, stops: rest.map((r) => st.start + r * (st.end - st.start)) };
+      };
 
       // Snap próprio (o snap do ScrollTrigger luta com o scroll suave): quando o scroll pára,
       // assenta no card seguinte se foste para baixo, ou no anterior se foste para cima.
@@ -98,7 +103,7 @@ export default function Services() {
       };
       const onScroll = () => { clearTimeout(timer); timer = setTimeout(settle, 140); };
       lenis?.on('scroll', onScroll);
-      return () => { clearTimeout(timer); lenis?.off('scroll', onScroll); };
+      return () => { clearTimeout(timer); lenis?.off('scroll', onScroll); delete host.__phase; };
     });
 
     mm.add(`${MQ.mobile} and ${MQ.motion}`, () => {
@@ -112,7 +117,7 @@ export default function Services() {
   }, { scope: root, dependencies: [services.length, lenis], revertOnUpdate: true });
 
   return (
-    <section ref={root} id="servicos" className="svc" aria-labelledby="svc-title">
+    <section ref={root} id="servicos" data-phase="" className="svc" aria-labelledby="svc-title">
       <div className="svc-head wrap">
         <SplitHeading id="svc-title" className="t-h2 svc-title">
           {t('homepage.services.title_a')} <em>{t('homepage.services.title_b')}</em>

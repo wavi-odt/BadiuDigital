@@ -70,7 +70,7 @@ export default function Work() {
   );
 
   return (
-    <section ref={root} id="trabalho" className="work wrap" aria-labelledby="work-title">
+    <section ref={root} id="trabalho" data-phase="" className="work wrap" aria-labelledby="work-title">
       <div className="work-head">
         <SplitHeading id="work-title" className="t-h2 work-title">
           {t('homepage.work.title_a')} <em>{t('homepage.work.title_b')}</em>

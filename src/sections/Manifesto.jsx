@@ -42,25 +42,21 @@ export default function Manifesto() {
     const mm = gsap.matchMedia();
     mm.add(MQ.motion, () => {
       const ws = gsap.utils.toArray('[data-word]', para.current);
-      gsap.to(ws, {
-        color: (i, el) => (el.dataset.key ? 'var(--accent-em)' : 'var(--fg)'),
-        stagger: 0.1, ease: 'none',
-        scrollTrigger: { trigger: para.current, start: 'top 78%', end: 'bottom 45%', scrub: 0.6 },
+      // Fase pinned: o scroll acende as palavras (pedra → osso) e roda o símbolo, tudo numa só timeline.
+      const tl = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { trigger: root.current, start: 'top top', end: () => `+=${window.innerHeight * 1.1}`, pin: true, scrub: 0.6, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: 3 },
       });
-      ws.forEach((w, i) => {
-        if (!w.dataset.key) return;
-        ScrollTrigger.create({
-          trigger: para.current, once: true,
-          start: () => `top+=${(i / ws.length) * para.current.offsetHeight} 78%`,
-          onEnter: () => burst(w),
-        });
-      });
-      gsap.from(para.current, { y: 80, ease: 'none', scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'top 30%', scrub: true } });
+      tl.to(ws, { color: (i, el) => (el.dataset.key ? 'var(--accent-em)' : 'var(--fg)'), duration: 0.5, stagger: 0.1 }, 0);
+      ws.forEach((w, i) => { if (w.dataset.key) tl.call(() => burst(w), null, i * 0.1 + 0.05); });
+      tl.to('[data-spin] svg', { rotate: 360, duration: tl.duration() || 5 }, 0);
       gsap.from('[data-spin] [data-logo-cell]', {
         scale: 0, transformOrigin: '50% 50%', stagger: { each: 0.04, from: 'random' }, duration: 0.8, ease: 'back.out(2)',
         scrollTrigger: { trigger: root.current, start: 'top 75%', once: true },
       });
-      gsap.to('[data-spin] svg', { rotate: 360, ease: 'none', scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: true } });
+      const el = root.current;
+      el.__phase = () => { const st = tl.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end] }; };
+      return () => { delete el.__phase; };
     });
     mm.add(MQ.reduce, () => {
       gsap.set('[data-word]', { color: (i, el) => (el.dataset.key ? 'var(--accent-em)' : 'var(--fg)') });
@@ -69,7 +65,7 @@ export default function Manifesto() {
   }, { scope: root, dependencies: [words], revertOnUpdate: true });
 
   return (
-    <section ref={root} className="mani wrap" aria-label={t('homepage.manifesto.label')}>
+    <section ref={root} data-phase="" className="mani wrap" aria-label={t('homepage.manifesto.label')}>
       <div className="mani-side">
         <Label>{t('homepage.manifesto.label')}</Label>
         <div className="mani-spin" data-spin="">

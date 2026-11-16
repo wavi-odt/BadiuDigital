@@ -65,7 +65,7 @@ export default function Team() {
   if (!members.length) return null;
 
   return (
-    <section ref={root} id="equipa" className="team wrap" aria-labelledby="team-title">
+    <section ref={root} id="equipa" data-phase="" className="team wrap" aria-labelledby="team-title">
       <div className="team-head">
         <div>
           <Label>{t('homepage.team.label')}</Label>

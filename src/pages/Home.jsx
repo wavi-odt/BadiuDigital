@@ -6,6 +6,8 @@ import Work from '@/sections/Work';
 import Process from '@/sections/Process';
 import Team from '@/sections/Team';
 import Cta from '@/sections/Cta';
+import PhaseRail from '@/components/PhaseRail';
+import { usePhasePaging } from '@/motion/usePhasePaging';
 
 /**
  * Home: hero → manifesto → serviços → trabalho → processo → equipa → CTA.
@@ -13,8 +15,10 @@ import Cta from '@/sections/Cta';
  */
 export default function Home() {
   useDocumentTitle(null);
+  usePhasePaging();
   return (
     <>
+      <PhaseRail />
       <Hero />
       <Manifesto />
       <Services />

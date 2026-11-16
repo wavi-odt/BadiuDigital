@@ -255,7 +255,17 @@
       "label": "Próximo projeto",
       "title_a": "Vamos tecer algo",
       "title_b": "juntos?"
-    }
+    },
+    "phases": [
+      "Início",
+      "Manifesto",
+      "Serviços",
+      "Trabalho",
+      "Processo",
+      "Equipa",
+      "Contacto"
+    ],
+    "phases_label": "Fases da página"
   },
   "footer2": {
     "studio": "Estúdio",

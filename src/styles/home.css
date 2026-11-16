@@ -39,6 +39,7 @@
     display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 32px;
     padding-top: clamp(120px, 16vw, 220px); padding-bottom: clamp(120px, 16vw, 220px);
   }
+  @media (min-width: 900px) { .mani { min-height: 100svh; align-items: center; padding-top: 110px; padding-bottom: 60px; } }
   .mani-side { display: flex; flex-direction: column; gap: 40px; align-self: start; position: sticky; top: 120px; }
   .mani-spin { width: 120px; height: 120px; }
   .mani-spin svg { display: block; }
@@ -143,6 +144,7 @@
 
   /* ── Processo ───────────────────────────────────────────── */
   .proc { padding-top: clamp(80px, 10vw, 140px); padding-bottom: clamp(120px, 14vw, 200px); display: grid; gap: 24px; }
+  @media (min-width: 900px) { .proc { min-height: 100svh; align-content: center; padding-top: 110px; padding-bottom: 60px; } }
   .proc-title { font-size: clamp(44px, 6vw, 96px); line-height: .95; letter-spacing: -0.035em; margin-bottom: 32px; }
   .proc-steps { position: relative; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
   .proc-line { position: absolute; left: 0; top: 6px; width: 100%; height: 60px; overflow: visible; pointer-events: none; }
@@ -228,4 +230,15 @@
   .svc-vis { order: -1; clip-path: none !important; }
   .svc-grid { width: 200px; }
   .svc-grid polygon { transform: none !important; }
+}
+
+/* Indicador de fases (só desktop com rato) */
+.prail { display: none; }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .prail { display: flex; flex-direction: column; gap: 14px; position: fixed; left: calc(var(--gx) / 2 - 5px); top: 50%; transform: translateY(-50%); z-index: 60; }
+  .prail button { position: relative; width: 10px; height: 10px; padding: 0; border: 0; background: var(--line-strong); transform: rotate(45deg); cursor: pointer; transition: background .4s, transform .5s var(--ease-badiu); }
+  .prail button.is-on { background: var(--accent); transform: rotate(45deg) scale(1.5); }
+  .prail button:hover { background: var(--fg); }
+  .prail button span { position: absolute; left: 22px; top: 50%; transform: rotate(-45deg) translate(-4px, 0); transform-origin: 0 0; opacity: 0; white-space: nowrap; font: 500 11px/1 var(--font-mono); letter-spacing: .2em; text-transform: uppercase; color: var(--fg); pointer-events: none; transition: opacity .3s, transform .4s var(--ease-badiu); }
+  .prail button:hover span, .prail button:focus-visible span { opacity: 1; transform: rotate(-45deg) translate(0, 0); }
 }

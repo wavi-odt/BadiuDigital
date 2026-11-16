@@ -63,7 +63,7 @@ export default function Hero({ video }) {
   }, { scope: root });
 
   return (
-    <section ref={root} className="hero wrap" aria-label={t('homepage.hero.label')}>
+    <section ref={root} data-phase="" className="hero wrap" aria-label={t('homepage.hero.label')}>
       <LazyCloth params={cloth} pull={1} className="hero-cloth" />
       {video && (
         <video

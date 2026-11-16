@@ -28,7 +28,7 @@ export default function Cta() {
   }, { scope: root });
 
   return (
-    <section ref={root} id="contacto" className="cta wrap" aria-labelledby="cta-title">
+    <section ref={root} id="contacto" data-phase="" className="cta wrap" aria-labelledby="cta-title">
       <LazyCloth params={cloth} pull={-1} radius={5} warmRate={0.25} className="cta-cloth" />
       <div className="cta-veil" aria-hidden="true" />
       <div className="cta-in">

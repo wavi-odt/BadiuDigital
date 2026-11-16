@@ -21,17 +21,17 @@ export default function Process() {
     const mm = gsap.matchMedia();
     const items = () => gsap.utils.toArray('[data-step]', root.current);
     mm.add(MQ.motion, () => {
-      gsap.from(items(), { y: 40, autoAlpha: 0, stagger: 0.1, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: '[data-steps]', start: 'top 85%', once: true } });
+      gsap.from(items(), { y: 40, autoAlpha: 0, stagger: 0.1, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: root.current, start: 'top 70%', once: true } });
     });
     mm.add(`${MQ.desktop} and ${MQ.motion}`, () => {
       const el = path.current;
       const len = el.getTotalLength();
       gsap.set(el, { strokeDasharray: len, strokeDashoffset: len });
       let lit = 0;
-      gsap.to(el, {
+      const tw = gsap.to(el, {
         strokeDashoffset: 0, ease: 'none',
         scrollTrigger: {
-          trigger: '[data-steps]', start: 'top 80%', end: 'bottom 55%', scrub: 0.6,
+          trigger: root.current, start: 'top top', end: () => `+=${window.innerHeight * 1.1}`, pin: true, scrub: 0.6, anticipatePin: 1, invalidateOnRefresh: true, refreshPriority: 1,
           onUpdate: (self) => {
             const list = items();
             const n = list.filter((s, i) => self.progress >= i / list.length + 0.02).length;
@@ -41,13 +41,16 @@ export default function Process() {
           },
         },
       });
+      const host = root.current;
+      host.__phase = () => { const st = tw.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end] }; };
+      return () => { delete host.__phase; };
     });
     mm.add(`${MQ.mobile}, ${MQ.reduce}`, () => { items().forEach((s) => s.classList.add('is-on')); });
     return () => mm.revert();
   }, { scope: root });
 
   return (
-    <section ref={root} id="processo" className="proc wrap" aria-labelledby="proc-title">
+    <section ref={root} id="processo" data-phase="" className="proc wrap" aria-labelledby="proc-title">
       <Label>{t('homepage.process.label')}</Label>
       <SplitHeading id="proc-title" className="t-h2 proc-title">
         {t('homepage.process.title_a')} <em>{t('homepage.process.title_b')}</em>

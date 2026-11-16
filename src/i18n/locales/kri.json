@@ -255,7 +255,17 @@
       "label": "Prósimu prujetu",
       "title_a": "Nu ta tesi algun kuza",
       "title_b": "djuntu?"
-    }
+    },
+    "phases": [
+      "Inísiu",
+      "Manifestu",
+      "Sirvisus",
+      "Trabadju",
+      "Prusésu",
+      "Ekipa",
+      "Kontatu"
+    ],
+    "phases_label": "Fases di pájina"
   },
   "footer2": {
     "studio": "Stúdiu",

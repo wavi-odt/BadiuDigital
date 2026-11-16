@@ -5,7 +5,7 @@ import { useMotion } from '@/app/providers/MotionProvider';
 import Logo from '@/components/Logo';
 
 /**
- * Preloader (máx. 2.5s, só no primeiro carregamento):
+ * Preloader (~4s no primeiro carregamento, ritmo calmo):
  *  1. os 12 losangos entram de posições dispersas e tecem-se na grelha do logo;
  *  2. o núcleo castanho entra por último e pulsa uma vez;
  *  3. o wordmark revela-se carácter a carácter;
@@ -97,21 +97,24 @@ function PreloaderInner({ mode }) {
         .to(core, { scale: 1.35, duration: 0.18, ease: 'power2.out', yoyo: true, repeat: 1, transformOrigin: '50% 50%' }, 1.4)
         .from(chars, { yPercent: 110, duration: 0.7, ease: 'expo.out', stagger: 0.05 }, 1.1)
         .to(q('.pre-count'), { autoAlpha: 0, duration: 0.3 }, 1.65);
-      fly(tl, 1.75, 0.75);
-      closeBg(tl, 1.8, 0.7);
-      tl.call(cueHero, null, 2.0);
-      enterNav(tl, 2.2);
+      // pausa de ~0.4s com o logo completo antes de voar para a navbar
+      fly(tl, 2.15, 0.9);
+      closeBg(tl, 2.2, 0.85);
+      tl.call(cueHero, null, 2.45);
+      enterNav(tl, 2.65);
+      tl.timeScale(0.75); // ritmo mais calmo: ~4s até o fundo abrir
     } else {
       // versão curta: o logo já está montado, só pulsa e voa
       tl.to(core, { scale: 1.35, duration: 0.16, ease: 'power2.out', yoyo: true, repeat: 1, transformOrigin: '50% 50%' }, 0.05);
-      fly(tl, 0.3, 0.65);
-      closeBg(tl, 0.25, 0.6);
-      tl.call(cueHero, null, 0.4);
-      enterNav(tl, 0.55);
+      fly(tl, 0.3, 0.8);
+      closeBg(tl, 0.3, 0.75);
+      tl.call(cueHero, null, 0.5);
+      enterNav(tl, 0.7);
+      tl.timeScale(0.85);
     }
 
     // segurança: nunca deixar o site preso atrás do preloader
-    const safety = setTimeout(() => { tl.progress(1); end(); }, 5000);
+    const safety = setTimeout(() => { tl.progress(1); end(); }, 9000);
     return () => { clearTimeout(safety); running.current = false; lenisRef.current?.start(); };
   }, { scope: root });
 

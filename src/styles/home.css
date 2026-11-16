@@ -46,9 +46,9 @@
   .mani-text {
     margin: 0; font-family: var(--font-display);
     font-size: clamp(32px, 4.4vw, 72px); line-height: 1.08; letter-spacing: -0.025em;
-    color: var(--line-strong); text-wrap: pretty;
+    color: var(--mani-dim); text-wrap: pretty;
   }
-  .mani-word { position: relative; color: var(--line-strong); }
+  .mani-word { position: relative; color: var(--mani-dim); }
   .mani-word.is-key { font-style: italic; }
   @media (max-width: 760px) {
     .mani { grid-template-columns: 1fr; }
@@ -170,7 +170,7 @@
   .team-meta { display: grid; gap: 6px; }
   .team-name { font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: -0.02em; line-height: 1.1; }
   .team-role { color: var(--muted); }
-  .team-link { margin-top: 10px; color: var(--accent-em); font-size: 12px; }
+  .team-link { margin-top: 10px; color: var(--fg-soft); font-size: 12px; }
 
   /* ── CTA ────────────────────────────────────────────────── */
   .cta { position: relative; overflow: clip; padding-top: clamp(120px, 16vw, 240px); padding-bottom: clamp(80px, 10vw, 140px); }
@@ -203,4 +203,15 @@
   .hero-scroll-dot { animation: none; }
   .mani-word { color: var(--fg); }
   .mani-word.is-key { color: var(--accent-em); }
+}
+
+/* Reduced motion no desktop: sem pin nem scroll horizontal, os serviços empilham-se como em mobile */
+@media (prefers-reduced-motion: reduce) {
+  .svc-hint { display: none; }
+  .svc-hint-mobile { display: inline; }
+  .svc-track { flex-direction: column; perspective: none; }
+  .svc-panel { flex-basis: auto; grid-template-columns: 1fr; min-height: 0; transform: none !important; }
+  .svc-vis { order: -1; clip-path: none !important; }
+  .svc-grid { width: 200px; }
+  .svc-grid polygon { transform: none !important; }
 }

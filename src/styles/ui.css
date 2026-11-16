@@ -115,7 +115,7 @@
   }
   .lang-list button:hover { background: color-mix(in srgb, var(--fg) 6%, transparent); color: var(--fg); }
   .lang-list button[aria-current] { color: var(--fg); }
-  .lang-list button[aria-current] .lang-short { color: var(--accent-em); }
+  .lang-list button[aria-current] .lang-short { color: var(--fg); }
   .lang-short { width: 30px; font: 500 12px/1 var(--font-mono); letter-spacing: .14em; color: var(--muted); }
   @keyframes lang-in { from { opacity: 0; transform: translateY(-6px) scale(.96); } }
 

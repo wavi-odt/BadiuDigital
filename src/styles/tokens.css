@@ -24,6 +24,8 @@
   --accent: var(--castanho);        /* botão principal, núcleo do logo */
   --accent-em: var(--castanho-claro); /* palavras em itálico nos títulos */
   --on-accent: var(--osso);
+  /* palavras do manifesto ainda por acender: pedra aclarada para cumprir 3:1 (texto grande) */
+  --mani-dim: #606060;
 
   /* Logo */
   --logo-core: var(--castanho);
@@ -66,7 +68,8 @@ html[data-theme="light"] {
   --line-strong: #D2D2D0;
   --fg: var(--noite);
   --fg-soft: #3A3A3A;
-  --muted: #6B6B6B;           /* névoa escurecida para AA em fundo osso */
+  --muted: #636363;           /* névoa escurecida para AA em fundo osso e nas superfícies */
+  --mani-dim: #8A8A86;
   --accent: var(--cafe);
   --accent-em: var(--cafe);
   --on-accent: var(--osso);

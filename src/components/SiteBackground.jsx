@@ -13,10 +13,11 @@ export default function SiteBackground() {
     <LazyGrainGradient
       className="site-bg"
       palette={theme === 'light' ? 'siteLight' : 'site'}
-      grain={theme === 'light' ? 0.14 : 0.2}
+      grain={theme === 'light' ? 0.12 : 0.17}
       spread={0.85}
       flow={0.04}
       follow
+      adaptive
       dpr={small ? 0.5 : 0.75}
     />
   );

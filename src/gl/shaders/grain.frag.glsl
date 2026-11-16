@@ -26,7 +26,7 @@ float noise(vec2 p) {
 }
 float fbm(vec2 p) {
   float v = 0.0, a = 0.5;
-  for (int i = 0; i < 4; i++) { v += a * noise(p); p = p * 2.02 + 7.3; a *= 0.5; }
+  for (int i = 0; i < 3; i++) { v += a * noise(p); p = p * 2.02 + 7.3; a *= 0.5; }
   return v;
 }
 
@@ -57,7 +57,7 @@ void main() {
   vec3 col = uBg;
   col = mix(col, uA, smoothstep(0.14, 0.26, n));
   col = mix(col, uB, smoothstep(0.36, 0.50, n));
-  col = mix(col, uC, smoothstep(0.78, 0.92, n) * 0.6);
+  col = mix(col, uC, smoothstep(0.78, 0.92, n) * 0.4);
 
   // grão fino por cima de tudo (luminância), para dar textura mesmo nas zonas escuras
   col += (hash(gl_FragCoord.xy + frame * 7.0) - 0.5) * 0.02;

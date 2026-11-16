@@ -79,7 +79,7 @@ export default function Services() {
       const host = root.current;
       host.__phase = () => {
         const st = tl.scrollTrigger;
-        return { start: st.start, end: st.end, stops: rest.map((r) => st.start + r * (st.end - st.start)) };
+        return { start: st.start, end: st.end, stops: rest.map((r) => st.start + r * (st.end - st.start)), duration: 1.9 };
       };
 
       // Snap próprio (o snap do ScrollTrigger luta com o scroll suave): quando o scroll pára,

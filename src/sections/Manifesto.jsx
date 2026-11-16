@@ -55,7 +55,7 @@ export default function Manifesto() {
         scrollTrigger: { trigger: root.current, start: 'top 75%', once: true },
       });
       const el = root.current;
-      el.__phase = () => { const st = tl.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end] }; };
+      el.__phase = () => { const st = tl.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end], duration: 3.6 }; };
       return () => { delete el.__phase; };
     });
     mm.add(MQ.reduce, () => {

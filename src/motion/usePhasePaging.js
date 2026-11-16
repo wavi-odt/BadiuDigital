@@ -9,7 +9,7 @@ import { useMotion } from '@/app/providers/MotionProvider';
  *  - fase alta (conteúdo > 1 ecrã) ou pinned: o scroll corre livremente lá dentro e só
  *    muda de fase quando chega à borda (um segundo gesto);
  *  - fase com passos (el.__phase().stops, ex.: serviços): cada gesto avança um passo.
- * Elementos pinned registam o seu intervalo em el.__phase = () => ({ start, end, stops? }).
+undefined
  *
  * Só no desktop com rato e sem reduced motion; em touch e mobile o scroll continua normal.
  * Rato: ignora a "cauda" de inércia (só gestos novos mudam de fase). Teclado: ↑ ↓ PgUp PgDn Espaço Home End.
@@ -65,7 +65,7 @@ function start(lenis) {
     const dist = Math.abs(to - lenis.scroll);
     if (dist < 2) return;
     // distâncias longas demoram mais (animações pinned correm sozinhas), curtas assentam depressa
-    duration ??= Math.min(2.6, Math.max(0.9, (dist / window.innerHeight) * 0.9));
+    duration ??= Math.min(3, Math.max(1.2, (dist / window.innerHeight) * 1.1));
     busy = true;
     clearTimeout(unlockTimer);
     const unlock = () => { busy = false; cooldown = performance.now() + 250; };
@@ -85,7 +85,7 @@ function start(lenis) {
     if (dir > 0) {
       if (p.stops) {
         const next = p.stops.find((s) => s > pos + E);
-        if (next !== undefined) return { to: next };
+        if (next !== undefined) return { to: next, duration: p.duration };
       } else if (pos < p.end - E) {
         return { free: true, limit: p.end };
       }
@@ -95,7 +95,7 @@ function start(lenis) {
 
     if (p.stops) {
       const prev = [...p.stops].reverse().find((s) => s < pos - E);
-      if (prev !== undefined) return { to: prev };
+      if (prev !== undefined) return { to: prev, duration: p.duration };
     } else if (pos > p.start + E) {
       return pos <= p.end + E ? { free: true, limit: p.start } : { to: p.end };
     }
@@ -132,7 +132,7 @@ function start(lenis) {
     e.stopPropagation();
     if (busy || now < cooldown || !d) return;
     const fresh = gap > 140 || abs > prevAbs * 1.8; // gesto novo, não a cauda da inércia
-    if (fresh) go(d.to);
+    if (fresh) go(d.to, d.duration);
   };
 
   const onKey = (e) => {
@@ -149,7 +149,7 @@ function start(lenis) {
     e.preventDefault();
     if (busy) return;
     const d = decide(dir);
-    if (d) go(d.free ? d.limit : d.to);
+    if (d) go(d.free ? d.limit : d.to, d.duration);
   };
 
   window.addEventListener('wheel', onWheel, { passive: false, capture: true });

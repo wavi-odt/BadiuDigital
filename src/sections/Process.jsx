@@ -42,7 +42,7 @@ export default function Process() {
         },
       });
       const host = root.current;
-      host.__phase = () => { const st = tw.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end] }; };
+      host.__phase = () => { const st = tw.scrollTrigger; return { start: st.start, end: st.end, stops: [st.start, st.end], duration: 3.2 }; };
       return () => { delete host.__phase; };
     });
     mm.add(`${MQ.mobile}, ${MQ.reduce}`, () => { items().forEach((s) => s.classList.add('is-on')); });

@@ -1,18 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
-import { gsap, Flip, useGSAP } from '@/motion/gsap';
+import { gsap, useGSAP } from '@/motion/gsap';
 import { useIntro } from '@/app/providers/IntroProvider';
 import { useMotion } from '@/app/providers/MotionProvider';
 import Logo from '@/components/Logo';
 
 /**
- * Preloader (~4s no primeiro carregamento, ritmo calmo):
+ * Preloader (~5s no primeiro carregamento): o logo monta-se e desmonta-se, e depois abre a landing:
  *  1. os 12 losangos entram de posições dispersas e tecem-se na grelha do logo;
  *  2. o núcleo castanho entra por último e pulsa uma vez;
  *  3. o wordmark revela-se carácter a carácter;
- *  4. símbolo e wordmark encolhem e voam (Flip.fit) para o logo da navbar,
- *     enquanto o fundo fecha num losango e o hero começa a entrar;
- *  5. o símbolo da navbar "monta-se" losango a losango e os links entram um a um.
- * Na segunda visita (sessionStorage) corre a versão curta (~1s).
+ *  4. pausa com o logo completo; depois o núcleo pulsa, os losangos dispersam-se a rodar e o wordmark sobe;
+ *  5. o fundo fecha num losango e abre a landing; o símbolo da navbar monta-se e os links entram um a um.
+ * Na segunda visita (sessionStorage) corre a versão curta (~2.6s).
  */
 export default function Preloader() {
   const { mode, done } = useIntro();
@@ -35,10 +34,6 @@ function PreloaderInner({ mode }) {
     const q = gsap.utils.selector(root);
     const navLogo = document.querySelector('[data-nav-logo]');
     const navItems = document.querySelectorAll('[data-nav-item]');
-    const navSymbol = navLogo?.querySelector('.logo-symbol');
-    const navWm = navLogo?.querySelector('.logo-wm');
-    const symbol = q('.pre-symbol .logo-symbol')[0];
-    const wm = q('.pre-wm .logo-wm')[0];
     const cells = q('.pre-symbol [data-logo-cell]:not([data-role="core"])');
     const core = q('.pre-symbol [data-role="core"]');
     const chars = q('.pre-wm [data-wm-char]');
@@ -68,49 +63,54 @@ function PreloaderInner({ mode }) {
       });
     };
 
-    const fly = (tl, at, duration) => {
-      tl.set(q('.pre-wm'), { overflow: 'visible' }, at);
-      if (navSymbol && symbol) tl.add(Flip.fit(symbol, navSymbol, { scale: true, duration, ease: 'badiu' }), at);
-      if (navWm && wm) tl.add(Flip.fit(wm, navWm, { scale: true, duration, ease: 'badiu' }), at + 0.04);
-    };
     const closeBg = (tl, at, duration) => tl.to(bg, {
       clipPath: 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)', duration, ease: 'expo.inOut',
     }, at);
     const enterNav = (tl, at) => tl.to(navItems, { autoAlpha: 1, y: 0, duration: 0.8, ease: 'expo.out', stagger: 0.06 }, at);
+    // desmontar: o núcleo pulsa, os losangos dispersam-se a rodar e o wordmark sobe e desaparece
+    const disassemble = (tl, at, scale = 1) => {
+      tl.to(core, { scale: 1.7, duration: 0.3 * scale, ease: 'power2.out', transformOrigin: '50% 50%' }, at)
+        .to(cells, {
+          x: () => gsap.utils.random(-170, 170), y: () => gsap.utils.random(-140, 140), rotation: () => gsap.utils.random(-200, 200),
+          scale: 0, opacity: 0, duration: 1.0 * scale, ease: 'power3.in', transformOrigin: '50% 50%', stagger: { each: 0.05 * scale, from: 'center' },
+        }, at + 0.2 * scale)
+        .to(chars, { yPercent: -115, duration: 0.7 * scale, ease: 'power3.in', stagger: 0.05 * scale }, at + 0.2 * scale)
+        .to(core, { scale: 0, duration: 0.5 * scale, ease: 'power3.in', transformOrigin: '50% 50%' }, at + 0.95 * scale);
+    };
 
     const tl = gsap.timeline({ onComplete: end });
 
     if (mode === 'full') {
+      // ~5s: monta-se (0–2.8s), pausa com o logo completo, desmonta-se (3.1–4.4s), abre a landing (4.3–5.2s)
       const counter = { v: 0 };
       tl.from(cells, {
-        x: () => gsap.utils.random(-110, 110),
-        y: () => gsap.utils.random(-90, 90),
-        rotation: () => gsap.utils.random(-180, 180),
-        scale: 0, opacity: 0, duration: 1.1, ease: 'expo.out', transformOrigin: '50% 50%',
-        stagger: { each: 0.045, from: 'random' },
+        x: () => gsap.utils.random(-130, 130), y: () => gsap.utils.random(-110, 110), rotation: () => gsap.utils.random(-180, 180),
+        scale: 0, opacity: 0, duration: 1.5, ease: 'expo.out', transformOrigin: '50% 50%', stagger: { each: 0.07, from: 'random' },
       }, 0)
         .to(counter, {
-          v: 100, duration: 1.6, ease: 'power2.inOut',
+          v: 100, duration: 2.6, ease: 'power2.inOut',
           onUpdate: () => { if (count) count.textContent = String(Math.round(counter.v)).padStart(3, '0'); },
         }, 0)
-        .from(core, { scale: 0, rotation: 90, duration: 0.6, ease: 'back.out(3)', transformOrigin: '50% 50%' }, 0.85)
-        .to(core, { scale: 1.35, duration: 0.18, ease: 'power2.out', yoyo: true, repeat: 1, transformOrigin: '50% 50%' }, 1.4)
-        .from(chars, { yPercent: 110, duration: 0.7, ease: 'expo.out', stagger: 0.05 }, 1.1)
-        .to(q('.pre-count'), { autoAlpha: 0, duration: 0.3 }, 1.65);
-      // pausa de ~0.4s com o logo completo antes de voar para a navbar
-      fly(tl, 2.15, 0.9);
-      closeBg(tl, 2.2, 0.85);
-      tl.call(cueHero, null, 2.45);
-      enterNav(tl, 2.65);
-      tl.timeScale(0.75); // ritmo mais calmo: ~4s até o fundo abrir
+        .from(core, { scale: 0, rotation: 90, duration: 0.8, ease: 'back.out(3)', transformOrigin: '50% 50%' }, 1.4)
+        .to(core, { scale: 1.35, duration: 0.22, ease: 'power2.out', yoyo: true, repeat: 1, transformOrigin: '50% 50%' }, 2.3)
+        .from(chars, { yPercent: 115, duration: 0.9, ease: 'expo.out', stagger: 0.08 }, 1.5)
+        .to(q('.pre-count'), { autoAlpha: 0, duration: 0.4 }, 2.7);
+      disassemble(tl, 3.1);
+      closeBg(tl, 4.3, 0.9);
+      tl.call(cueHero, null, 4.55);
+      enterNav(tl, 4.9);
     } else {
-      // versão curta: o logo já está montado, só pulsa e voa
-      tl.to(core, { scale: 1.35, duration: 0.16, ease: 'power2.out', yoyo: true, repeat: 1, transformOrigin: '50% 50%' }, 0.05);
-      fly(tl, 0.3, 0.8);
-      closeBg(tl, 0.3, 0.75);
-      tl.call(cueHero, null, 0.5);
-      enterNav(tl, 0.7);
-      tl.timeScale(0.85);
+      // versão curta (2.ª visita): monta-se e desmonta-se depressa (~2.6s)
+      tl.from(cells, {
+        x: () => gsap.utils.random(-130, 130), y: () => gsap.utils.random(-110, 110), rotation: () => gsap.utils.random(-180, 180),
+        scale: 0, opacity: 0, duration: 0.8, ease: 'expo.out', transformOrigin: '50% 50%', stagger: { each: 0.035, from: 'random' },
+      }, 0)
+        .from(core, { scale: 0, rotation: 90, duration: 0.5, ease: 'back.out(3)', transformOrigin: '50% 50%' }, 0.5)
+        .from(chars, { yPercent: 115, duration: 0.6, ease: 'expo.out', stagger: 0.05 }, 0.5);
+      disassemble(tl, 1.3, 0.7);
+      closeBg(tl, 2.0, 0.7);
+      tl.call(cueHero, null, 2.2);
+      enterNav(tl, 2.4);
     }
 
     // segurança: nunca deixar o site preso atrás do preloader

@@ -55,7 +55,7 @@ export default function Hero({ video }) {
       gsap.to(title.current, { yPercent: -35, scale: 0.92, autoAlpha: 0.1, transformOrigin: '0% 100%', ease: 'none', scrollTrigger: st });
       gsap.to('[data-hero-row]', { y: -120, autoAlpha: 0, ease: 'none', scrollTrigger: { ...st, end: '60% top' } });
       gsap.to(cloth, { amp: 3.2, drift: 6, zoom: 1.25, ease: 'none', scrollTrigger: st });
-      gsap.to('[data-hero-media]', { scale: 1.15, ease: 'none', scrollTrigger: st });
+      if (root.current.querySelector('[data-hero-media]')) gsap.to('[data-hero-media]', { scale: 1.15, ease: 'none', scrollTrigger: st });
     });
     return () => mm.revert();
   }, { scope: root });

@@ -6,6 +6,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useSplitReveal } from '@/motion/useSplitReveal';
 import { useVelocitySkew } from '@/motion/velocitySkew';
 import Label from '@/components/Label';
+import LazyGrainGradient from '@/gl/LazyGrainGradient';
 import Magnetic from '@/components/Magnetic';
 import TLink from '@/components/TLink';
 
@@ -87,6 +88,7 @@ export default function BrandSheet() {
         </div>
       </section>
 
+      <GrainDemo />
       <MotionDemo />
     </div>
   );
@@ -129,6 +131,29 @@ function MotionDemo() {
         <Label>Processo</Label>
         <RevealH2>Fio a <em>fio.</em></RevealH2>
       </div>
+    </section>
+  );
+}
+
+/** Variantes do fundo gratinado (gradiente com grão) para escolher onde aplicar */
+function GrainDemo() {
+  const v = [
+    { name: 'noite · foco castanho escuro', props: { palette: 'noite', grain: 0.22, spread: 0.85 } },
+    { name: 'castanho · mais quente', props: { palette: 'castanho', grain: 0.3, spread: 0.7 } },
+    { name: 'noite · grão forte e brilho pequeno', props: { palette: 'noite', grain: 0.45, spread: 0.55 } },
+  ];
+  return (
+    <section style={{ display: 'grid', gap: 24 }}>
+      <span className="t-label">Fundo gratinado</span>
+      {v.map((x) => (
+        <section key={x.name} style={{ position: 'relative', height: 420, borderRadius: 28, overflow: 'hidden', boxShadow: 'inset 0 0 0 1px var(--line)' }}>
+          <LazyGrainGradient {...x.props} />
+          <div style={{ position: 'relative', padding: 32, display: 'grid', gap: 12, alignContent: 'end', height: '100%' }}>
+            <span className="t-label">{x.name}</span>
+            <h3 className="t-h1" style={{ margin: 0 }}>Software com <em>raízes.</em></h3>
+          </div>
+        </section>
+      ))}
     </section>
   );
 }

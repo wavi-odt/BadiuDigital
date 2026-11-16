@@ -52,8 +52,10 @@ export default function Hero({ video }) {
     const mm = gsap.matchMedia();
     mm.add(MQ.motion, () => {
       const st = { trigger: root.current, start: 'top top', end: 'bottom top', scrub: true };
-      gsap.to(title.current, { yPercent: -35, scale: 0.92, autoAlpha: 0.1, transformOrigin: '0% 100%', ease: 'none', scrollTrigger: st });
-      gsap.to('[data-hero-row]', { y: -120, autoAlpha: 0, ease: 'none', scrollTrigger: { ...st, end: '60% top' } });
+      // fromTo com valores iniciais explícitos e sem render imediato: o efeito é criado enquanto o título
+      // ainda está escondido (preloader), e um `to` guardaria opacidade 0 como ponto de partida.
+      gsap.fromTo(title.current, { yPercent: 0, scale: 1, opacity: 1 }, { yPercent: -35, scale: 0.92, opacity: 0.1, transformOrigin: '0% 100%', ease: 'none', immediateRender: false, scrollTrigger: st });
+      gsap.fromTo('[data-hero-row]', { y: 0, opacity: 1 }, { y: -120, opacity: 0, ease: 'none', immediateRender: false, scrollTrigger: { ...st, end: '60% top' } });
       gsap.to(cloth, { amp: 3.2, drift: 6, zoom: 1.25, ease: 'none', scrollTrigger: st });
       if (root.current.querySelector('[data-hero-media]')) gsap.to('[data-hero-media]', { scale: 1.15, ease: 'none', scrollTrigger: st });
     });

@@ -16,4 +16,7 @@ CustomEase.create('badiu', 'M0,0 C0.7,0 0.2,1 1,1');
 // Valores por omissão: entradas expo.out
 gsap.defaults({ ease: 'expo.out', duration: 1.1 });
 
+// Em desenvolvimento, expor para depuração na consola
+if (import.meta.env.DEV && typeof window !== 'undefined') { window.gsap = gsap; window.ScrollTrigger = ScrollTrigger; }
+
 export { gsap, ScrollTrigger, SplitText, Flip, CustomEase, ScrambleTextPlugin, useGSAP };

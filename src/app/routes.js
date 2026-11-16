@@ -14,7 +14,7 @@ function lazyPage(loader) {
 }
 
 export const pages = {
-  home: lazyPage(() => import('@/pages/public/HomePage')),
+  home: lazyPage(() => import('@/pages/Home')),
   projects: lazyPage(() => import('@/pages/public/ProjectsPage')),
   project: lazyPage(() => import('@/pages/public/ProjectPage')),
   services: lazyPage(() => import('@/pages/public/ServicesPage')),

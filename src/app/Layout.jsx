@@ -9,8 +9,8 @@ import ScrollProgress from '@/components/ScrollProgress';
 import Cursor from '@/components/Cursor';
 import Grain from '@/components/Grain';
 import Preloader from '@/components/Preloader';
-// TEMPORÁRIO: peças antigas que ainda não têm versão nova (footer → Fase 2, navegação mobile e pesquisa)
-import Footer from '@/components/PublicComponets/Footer';
+// TEMPORÁRIO: navegação mobile e pesquisa antigas (visual novo na Fase 3)
+import Footer from '@/components/Footer';
 import BottomNav from '@/components/PublicComponets/BottomNav';
 import CommandPalette, { CommandPaletteProvider } from '@/components/PublicComponets/CommandPalette';
 
@@ -20,6 +20,17 @@ export default function Layout() {
   const { scrollTo } = useMotion();
   const intro = useIntro();
   const first = useRef(true);
+
+  // O conteúdo muda de altura (páginas lazy, dados da API, imagens): recalcular os ScrollTriggers
+  useEffect(() => {
+    let t;
+    const ro = new ResizeObserver(() => {
+      clearTimeout(t);
+      t = setTimeout(() => ScrollTrigger.refresh(), 120);
+    });
+    ro.observe(document.body);
+    return () => { clearTimeout(t); ro.disconnect(); };
+  }, []);
 
   // Voltar/avançar no browser (sem cortina): ir para o topo e recalcular os triggers
   useEffect(() => {

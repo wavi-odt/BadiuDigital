@@ -1,8 +1,11 @@
+/* A camada "legacy" (páginas antigas) fica por baixo de tudo: o código novo ganha sempre. */
+@layer legacy, theme, base, components, utilities;
 @import "tailwindcss";
 @import "./fonts.css";
 @import "./tokens.css";
+@import "./ui.css";
 /* TEMPORÁRIO: estilos das páginas antigas, até serem refeitas (Fase 3). Apagar no fim. */
-@import "./legacy.css";
+@import "./legacy.css" layer(legacy);
 
 /* Tokens expostos como utilitários Tailwind: bg-noite, text-osso, text-fg, bg-surface, font-display… */
 @theme inline {

@@ -63,8 +63,19 @@
     "no_projects": "Ka ten prodjetu pa mostá inda.",
     "tagline": "Estúdiu dijital · Santiagu, Kabu Verdi",
     "manifesto": "Nu ta konstruí software ku raízes. Interfasis ku ta xinti, produtus ki ta fika i kódigus fetu ku kuidadu, di Santiagu pa mundu.",
-    "manifesto_accents": ["raízes.", "senti,", "fika", "mundu."],
-    "phases": ["Inísiu", "Maniféstu", "Servisus", "Projetu", "Kontatu"]
+    "manifesto_accents": [
+      "raízes.",
+      "senti,",
+      "fika",
+      "mundu."
+    ],
+    "phases": [
+      "Inísiu",
+      "Maniféstu",
+      "Servisus",
+      "Projetu",
+      "Kontatu"
+    ]
   },
   "team": {
     "heading": "Kes pesoas por tras di Badiu.",
@@ -148,7 +159,10 @@
     "photo_placeholder": "[fotu]",
     "project_cover_alt": "Kapa di prodjetu {{name}}",
     "tagline_suffix": "Software ku raízes",
-    "header_nav": "Prinsipal"
+    "header_nav": "Prinsipal",
+    "skip_to_content": "Salta pa konteúdu",
+    "home_link": "Badiu Digital, inísiu",
+    "scroll_progress": "Progresu di pájina"
   },
   "palette": {
     "title": "Paleta di komandus",
@@ -168,5 +182,11 @@
     "group_members": "Ekipa",
     "group_actions": "Ações",
     "results": "Rezultadus"
+  },
+  "cursor": {
+    "view": "odja",
+    "open": "abri",
+    "go": "bora",
+    "talk": "papia"
   }
 }

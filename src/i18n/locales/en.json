@@ -63,8 +63,19 @@
     "no_projects": "No projects to show yet.",
     "tagline": "Digital studio · Santiago, Cape Verde",
     "manifesto": "We build software with roots. Interfaces that feel, products that last and code made with care, from Santiago to the world.",
-    "manifesto_accents": ["roots.", "feel,", "last", "world."],
-    "phases": ["Home", "Manifesto", "Services", "Projects", "Contact"]
+    "manifesto_accents": [
+      "roots.",
+      "feel,",
+      "last",
+      "world."
+    ],
+    "phases": [
+      "Home",
+      "Manifesto",
+      "Services",
+      "Projects",
+      "Contact"
+    ]
   },
   "team": {
     "heading": "The people behind Badiu.",
@@ -148,7 +159,10 @@
     "photo_placeholder": "[photo]",
     "project_cover_alt": "{{name}} cover",
     "tagline_suffix": "Software with roots",
-    "header_nav": "Main"
+    "header_nav": "Main",
+    "skip_to_content": "Skip to content",
+    "home_link": "Badiu Digital, home",
+    "scroll_progress": "Page progress"
   },
   "palette": {
     "title": "Command palette",
@@ -168,5 +182,11 @@
     "group_members": "Team",
     "group_actions": "Actions",
     "results": "Results"
+  },
+  "cursor": {
+    "view": "view",
+    "open": "open",
+    "go": "let’s go",
+    "talk": "talk"
   }
 }

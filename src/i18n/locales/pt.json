@@ -63,8 +63,19 @@
     "no_projects": "Ainda não há projetos para mostrar.",
     "tagline": "Estúdio digital · Santiago, Cabo Verde",
     "manifesto": "Construímos software com raízes. Interfaces que se sentem, produtos que ficam e código feito com cuidado, de Santiago para o mundo.",
-    "manifesto_accents": ["raízes.", "sentem,", "ficam", "mundo."],
-    "phases": ["Início", "Manifesto", "Serviços", "Projetos", "Contacto"]
+    "manifesto_accents": [
+      "raízes.",
+      "sentem,",
+      "ficam",
+      "mundo."
+    ],
+    "phases": [
+      "Início",
+      "Manifesto",
+      "Serviços",
+      "Projetos",
+      "Contacto"
+    ]
   },
   "team": {
     "heading": "As pessoas por trás da Badiu.",
@@ -148,7 +159,10 @@
     "photo_placeholder": "[foto]",
     "project_cover_alt": "Capa do projeto {{name}}",
     "tagline_suffix": "Software com raízes",
-    "header_nav": "Principal"
+    "header_nav": "Principal",
+    "skip_to_content": "Saltar para o conteúdo",
+    "home_link": "Badiu Digital, início",
+    "scroll_progress": "Progresso da página"
   },
   "palette": {
     "title": "Paleta de comandos",
@@ -168,5 +182,11 @@
     "group_members": "Equipa",
     "group_actions": "Ações",
     "results": "Resultados"
+  },
+  "cursor": {
+    "view": "ver",
+    "open": "abrir",
+    "go": "bora",
+    "talk": "falar"
   }
 }

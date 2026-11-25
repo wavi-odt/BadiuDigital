@@ -190,6 +190,7 @@ Os verbos **não se conjugam**. O tempo é marcado por partículas antes do verb
 | a casa, os meninos | kaza, mininus | sem artigos definidos |
 | de Santiago, e | di Santiago, i | preposições e conjunções do kriolu |
 | estúdio | estudiu | `o` final → `u`, sem acento |
+| parse | parsi | `e` final átono → `i` (parecer → parsi) |
 | irmã | irma | exceção: sem acento nem `n` |
 
 ---

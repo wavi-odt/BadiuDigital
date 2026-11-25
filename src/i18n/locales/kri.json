@@ -1,242 +1,242 @@
 {
   "footer": {
-    "nav": "Navigason",
+    "nav": "Navegason",
     "services": "Servisus"
   },
   "nav": {
     "home": "Inísiu",
-    "projects": "Projetu",
+    "projects": "Projetus",
     "services": "Servisus",
     "team": "Ekipa",
     "contact": "Kontatu"
   },
   "services": {
-    "heading": "Kuze ki nu ta fazi.",
-    "description": "Nu ta konstruí produtus dijitais di raiz — di identidasdi vijual pa infrastrutura.",
-    "contact_cta": "Kumesá prodjetu →",
-    "palette_sub": "Kuze ki nu ta fazi",
-    "what_includes": "Kuze ki ta inkluí",
+    "heading": "Kuzê ki nu ta fazi.",
+    "description": "Nu ta konstrui produtus dijital di raiz — di identidadi vizual ti infraestrutura.",
+    "contact_cta": "Kumesa un projetu →",
+    "palette_sub": "Kuzê ki nu ta fazi",
+    "what_includes": "Kuzê ki ta inklui",
     "toggle_open": "Odja detalhis",
-    "toggle_close": "Fitxá",
-    "recent_work": "Trabálju resenti",
-    "see_all_projects": "Odja tudu prodjetu →",
-    "cta_line1": "Bu ten",
+    "toggle_close": "Fitxa",
+    "recent_work": "Trabadju resenti",
+    "see_all_projects": "Odja tudu projetu →",
+    "cta_line1": "Bu ten un",
     "cta_line2": "ideia?",
-    "cta_sub": "Konta-nu ki bu ten na kabéça: un situ, un app o un prodútu intéru.",
-    "stat_headline": "1 stúdiu.\nTudu inkluídu.",
-    "stat_sub": "Dizain, kodigu i infrastrutura. Sem intermediárius, sem surprezas."
+    "cta_sub": "Kontanu kuzê ki bu ten na kabésa: un site, un app o un produtu interu.",
+    "stat_headline": "1 estudiu.\nTudu inkluidu.",
+    "stat_sub": "Dizain, kódigu i infraestrutura. Sen intermediáriu, sen surpreza."
   },
   "process": {
     "eyebrow": "Prosesu",
-    "heading": "Moda ki nu ta trabádja.",
+    "heading": "Mo ki nu ta trabadja.",
     "step_01_title": "Briefing",
-    "step_01_desc": "Nu ta oubi. Nu ta persibi negósiu, kontextu i objetivus antis di skrebê kodigu.",
+    "step_01_desc": "Nu ta obi. Nu ta pirsibi negósiu, kontestu i objetivus antis di skrebe un linha di kódigu.",
     "step_02_title": "Dizain",
-    "step_02_desc": "Nu ta fazi prututipu vijual di alta fidelidadi. Kada dizisaun tem un razon.",
-    "step_03_title": "Dizinvolvimentu",
-    "step_03_desc": "Kodigu limpu, semántiku i rápidu. Sem frameworks desnisesárius, sem atalhu.",
+    "step_02_desc": "Nu ta fazi prototipu vizual di alta fidelidadi. Kada disizon ten un razon.",
+    "step_03_title": "Dizenvolvimentu",
+    "step_03_desc": "Kódigu limpu, semántiku i rápidu. Sen frameworks ki ka ta prisiza, sen atadju.",
     "step_04_title": "Lansamentu",
-    "step_04_desc": "Deploy, testis finais i suportu pós-lansamentu. Nu ta fikà juntu até tudo ta trabájà."
+    "step_04_desc": "Deploy, testis final i apoiu dipôs di lansamentu. Nu ta fika ku bo ti tudu ta funsiona."
   },
   "why": {
     "eyebrow": "Pamodi Badiu",
-    "heading": "Un stúdiu diferenti.",
+    "heading": "Un estudiu diferenti.",
     "item_01_stat": "→ 1 ekipa",
-    "item_01_title": "Sem intermediárius.",
-    "item_01_desc": "Bu ta falà diretu ku kes ki ta dizinhà i ta skrebê kodigu. Sem gerentes, sem telefonin estragudu.",
+    "item_01_title": "Sen intermediáriu.",
+    "item_01_desc": "Bu ta fala diretu ku kes ki ta dizenha i ta skrebe kódigu. Sen account managers, sen telefoni stragadu.",
     "item_02_stat": "Full-stack",
-    "item_02_title": "Di logu pa servidor.",
-    "item_02_desc": "Marca, interfasi, frontend, backend — tudu sai di mezmustúdiu. Sem dependênsia di fornisedores externos.",
+    "item_02_title": "Di logu ti servidor.",
+    "item_02_desc": "Marka, interfasi, frontend, backend — tudu ta sai di mésmu estudiu. Sen dipendi di fornesedoris di fora.",
     "item_03_stat": "🌍",
     "item_03_title": "Kabu Verdi → Mundu.",
-    "item_03_desc": "Raizes lokais, padrões internasionais. Nu dja entregà pa klientis di 3 kontinentis."
+    "item_03_desc": "Raiz lokal, padron internasional. Nu dja entrega pa klientis na 3 kontinenti."
   },
   "home": {
-    "scroll_hint": "Fazi skrol po entra",
+    "scroll_hint": "Fazi scroll pa entra",
     "phase_manifesto": "02 Manifestu",
-    "phase_services": "03 Kuzé ki nu ta fazi",
+    "phase_services": "03 Kuzê ki nu ta fazi",
     "phase_work": "Trabadju",
-    "phase_contact": "05 Nu conversa",
-    "cta_heading": "Bu ten ideia?",
-    "cta_start": "Kumesá prodjetu →",
-    "cta_team": "Konxi ekipa",
-    "no_projects": "Ka ten prodjetu pa mostá inda.",
-    "tagline": "Estúdiu dijital · Santiagu, Kabu Verdi",
-    "manifesto": "Nu ta konstruí software ku raízes. Interfasis ku ta xinti, produtus ki ta fika i kódigus fetu ku kuidadu, di Santiagu pa mundu.",
+    "phase_contact": "05 Bora fala",
+    "cta_heading": "Bu ten un ideia?",
+    "cta_start": "Kumesa un projetu →",
+    "cta_team": "Konxe ekipa",
+    "no_projects": "Inda ka ten projetu pa mostra.",
+    "tagline": "Estudiu dijital · Santiago, Kabu Verdi",
+    "manifesto": "Nu ta konstrui software ku raiz. Interfasis ki bu ta xinti, produtus ki ta fika i kódigu fetu ku kuidadu, di Santiago pa mundu.",
     "manifesto_accents": [
-      "raízes.",
-      "senti,",
+      "raiz.",
+      "xinti,",
       "fika",
       "mundu."
     ],
     "phases": [
       "Inísiu",
-      "Maniféstu",
+      "Manifestu",
       "Servisus",
-      "Projetu",
+      "Projetus",
       "Kontatu"
     ]
   },
   "team": {
-    "heading": "Kes pesoas por tras di Badiu.",
-    "description": "Un estúdiu pikinoti, di pessoas ki ta skrevi kódigu, dizinha interfasis i gosta di odja ideias tomá forma. Kada um tem se portefóliu.",
-    "join_heading": "Bu ker fázê parti?",
-    "join_description": "Nu procura pesoas ki gosta di konstruí koisas ku kuidadu.",
-    "join_cta": "Falá ku nos →",
-    "banner": "Nu ta trabádja djuntu na kada prodjetu: design, kódigu i deploy na mesmu mesa."
+    "heading": "Kes pesoa ki sta pa tras di Badiu.",
+    "description": "Un estudiu pikinoti, di pesoas ki ta skrebe kódigu, ta dizenha interfasi i ta gosta di odja ideia ta ganha forma. Kada un ten se portefóliu.",
+    "join_heading": "Bu kre fazi parti?",
+    "join_description": "Nu sa ta djobe pesoas ki gosta di konstrui kuzas ku kuidadu.",
+    "join_cta": "Fala ku nos →",
+    "banner": "Nu ta trabadja djuntu na kada projetu: dizain, kódigu i deploy na mésmu mesa."
   },
   "member": {
     "breadcrumb": "Ekipa",
-    "projects_heading": "Prodjetu kin trabádja",
+    "projects_heading": "Projetus undi N trabadja",
     "stack_heading": "Stack",
-    "stack_description": "Kuze kin ta usa na dia a dia, di browser pa servidor.",
+    "stack_description": "Kuzê ki N ta uza dia-dia, di browser ti servidor.",
     "timeline_heading": "Perkursu",
-    "cta_heading": "Nu trabádja djuntu?",
+    "cta_heading": "Nu ta trabadja djuntu?",
     "cta_back": "← Ekipa",
-    "link_cv": "Baixa CV",
-    "link_portfolio": "Portefóliu pessual ↗"
+    "link_cv": "Baxa CV",
+    "link_portfolio": "Portefóliu pesoal ↗"
   },
   "projects": {
-    "eyebrow": "Projetu",
-    "heading": "Kuzas ki nu konstruí.",
+    "eyebrow": "Projetus",
+    "heading": "Kuzas ki nu konstrui.",
     "filter_all": "Tudu",
     "status_live": "Online",
-    "status_client": "Klinti",
-    "status_in_dev": "Na dizinvolvimentu",
-    "status_coming": "Em brevi",
-    "empty": "Ka ten prujetu pa es filtru."
+    "status_client": "Klienti",
+    "status_in_dev": "Na dizenvolvimentu",
+    "status_coming": "Na brevi",
+    "empty": "Ka ten projetu pa es filtru."
   },
   "project": {
-    "breadcrumb": "Projetu",
+    "breadcrumb": "Projetus",
     "about_heading": "Sobri projetu",
-    "view_live": "Odjal online ↗",
+    "view_live": "Odja online ↗",
     "view_code": "Kódigu ↗",
     "stack": "Stack",
     "team": "Ekipa",
     "year": "Anu",
-    "next": "Prósimu prujetu"
+    "next": "Prósimu projetu"
   },
   "contact": {
     "eyebrow": "Kontatu",
-    "heading": "Bu tem um ideia?",
-    "description": "Kontanu kuze ki bu tem na kabesa: um site, um app ou um produtu. Nu ta respondi normalmenti na 1 a 2 dias.",
-    "field_name": "Nómi",
-    "field_email": "e-mail",
+    "heading": "Bu ten un ideia?",
+    "description": "Konta kuzê ki bu ten na kabésa: un site, un app o un produtu interu. Nu ta respondi normalmenti na 1 a 2 dia di trabadju.",
+    "field_name": "Nomi",
+    "field_email": "Email",
     "field_type": "Tipu di projetu",
-    "field_message": "Mensagem",
-    "type_site": "Site ou marka",
-    "type_app": "App ou plataforma",
-    "type_infra": "Infrastrutura i deploy",
+    "field_message": "Mensajen",
+    "type_site": "Site o marka",
+    "type_app": "App o plataforma",
+    "type_infra": "Infraestrutura i deploy",
     "type_other": "Otu",
-    "error_name": "Fla bu nómi.",
-    "error_email": "e-mail inválidu.",
-    "error_message": "Kontanu um coxi (mín. 10 karateri).",
-    "success_heading": "Mensagem enviadu.",
-    "success_body": "Obrigadu! Nu ta respondi em brevi.",
+    "error_name": "Fla bu nomi.",
+    "error_email": "Email inválidu.",
+    "error_message": "Konta un poku más (mín. 10 karákter).",
+    "success_heading": "Mensajen mandadu.",
+    "success_body": "Obrigadu! Nu ta respondi lógu.",
     "send_another": "Manda otu",
-    "sending": "alan ta manda",
-    "send": "Manda mensagem →"
+    "sending": "Sa ta manda…",
+    "send": "Manda mensajen →"
   },
   "error": {
-    "label": "Erru",
+    "label": "Eru",
     "not_found": "Nu ka atxa keli.",
-    "generic": "Algu korrê mal.",
-    "not_found_msg": "Kel página li ka ta exísti ou foi mudadu.",
-    "retry": "Tentá di novu",
+    "generic": "Algun kuza da mal.",
+    "not_found_msg": "Keli pájina ka izisti o dja muda di lugar.",
+    "retry": "Tenta di novu",
     "back_home": "Volta pa inísiu",
-    "http": "Erru {{status}}",
+    "http": "Eru {{status}}",
     "timeout": "Servidor dura txeu pa respondi.",
-    "network": "Ka foi possivel liga na servidor."
+    "network": "Ka da pa liga ku servidor."
   },
   "ui": {
-    "loading": "Sa ta karrega…",
+    "loading": "Sa ta karega…",
     "theme_to_light": "Muda pa tema klaru",
     "theme_to_dark": "Muda pa tema sukuru",
-    "search": "Peskiza ({{shortcut}})",
+    "search": "Piskiza ({{shortcut}})",
     "change_language": "Muda língua",
-    "main_nav": "Navigason prinsipal",
-    "page_phases": "Fazis di página",
-    "filter_by_status": "Filtrá pa estadu",
-    "filter_by_tag": "Filtrá pa tenolojia",
+    "main_nav": "Navegason prinsipal",
+    "page_phases": "Fazis di pájina",
+    "filter_by_status": "Filtra pa estadu",
+    "filter_by_tag": "Filtra pa teknolojia",
     "photo_placeholder": "[fotu]",
-    "project_cover_alt": "Kapa di prodjetu {{name}}",
-    "tagline_suffix": "Software ku raízes",
+    "project_cover_alt": "Kapa di projetu {{name}}",
+    "tagline_suffix": "Software ku raiz",
     "header_nav": "Prinsipal",
     "skip_to_content": "Salta pa konteúdu",
     "home_link": "Badiu Digital, inísiu",
-    "scroll_progress": "Progresu di pájina",
-    "loading_page": "Ta karga…"
+    "scroll_progress": "Prugresu di pájina",
+    "loading_page": "Sa ta karega…"
   },
   "palette": {
-    "title": "Paleta di komandus",
-    "placeholder": "Peskizá páginas, projetu, membrus…",
-    "home_sub": "Página prinsipal",
+    "title": "Paleta di komandu",
+    "placeholder": "Piskiza pájina, projetu, membru…",
+    "home_sub": "Pájina prinsipal",
     "projects_sub": "Tudu projetu",
-    "team_sub": "Konxi ekipa",
-    "contact_sub": "Entra em kontatu",
-    "copy_email": "Kopia e-mail",
+    "team_sub": "Konxe ekipa",
+    "contact_sub": "Entra na kontatu",
+    "copy_email": "Kopia email",
     "copied": "✓ Kopiadu!",
-    "empty": "Sem rezultadus pa",
+    "empty": "Ka ten rezultadu pa",
     "navigate": "navega",
-    "select": "selisioná",
+    "select": "skodje",
     "close": "fitxa",
-    "group_pages": "Páginas",
-    "group_projects": "Projetu",
+    "group_pages": "Pájinas",
+    "group_projects": "Projetus",
     "group_members": "Ekipa",
-    "group_actions": "Ações",
-    "results": "Rezultadus"
+    "group_actions": "Ason",
+    "results": "Rezultadu"
   },
   "cursor": {
     "view": "odja",
     "open": "abri",
     "go": "bora",
-    "talk": "papia"
+    "talk": "fala"
   },
   "homepage": {
     "hero": {
-      "label": "Stúdiu dijital · Santiagu, Kabu Verdi",
+      "label": "Estudiu dijital · Santiago, Kabu Verdi",
       "title_a": "Software ku",
-      "title_b": "raís.",
+      "title_b": "raiz.",
       "lead": "Nu ta dizenha i nu ta konstrui produtus dijital ku kuidadu di kenha ki ta tesi un panu: fiu a fiu, sen présa di parse ku kes otu.",
-      "cta_start": "Kumesa un prujetu",
-      "cta_work": "Odja trabadju",
-      "scroll": "Faz scroll"
+      "cta_start": "Kumesa un projetu",
+      "cta_work": "Odja nos trabadju",
+      "scroll": "Fazi scroll"
     },
     "manifesto": {
       "label": "Manifestu",
-      "text": "Na Santiagu, panu di téra ta fazedu *dibagar*, fiu a fiu, ti padron parse. Nu ta faze software di mésmu manera: kada ekran, kada linha di kódigu i kada servidor *tisidu* ku intenson. Nu ta djunta dizain, injenharia i infraistrutura pa bu produtu ten *raís* i aguenta *tempu.*"
+      "text": "Na Santiago, panu di téra ta fazedu *dibagar*, fiu a fiu, ti padron parse. Nu ta fazi software di mésmu manera: kada ekran, kada linha di kódigu i kada servidor *tesidu* ku intenson. Nu ta djunta dizain, injenharia i infraestrutura pa bu produtu ten *raiz* i aguenta *tempu.*"
     },
     "services": {
-      "title_a": "Kuze ki nu ta",
+      "title_a": "Kuzê ki nu ta",
       "title_b": "tesi.",
-      "label": "{{count}} sirvisus · scroll pa avansa",
-      "label_mobile": "{{count}} sirvisus",
-      "panel": "Sirvisu {{n}} di {{total}}"
+      "label": "{{count}} servisus · scroll pa avansa",
+      "label_mobile": "{{count}} servisus",
+      "panel": "Servisu {{n}} di {{total}}"
     },
     "work": {
       "title_a": "Trabadju",
       "title_b": "skodjidu.",
       "label": "2024 — 2026",
-      "all": "Odja tudu prujetus",
-      "empty": "Inda ka ten prujetu pa mostra."
+      "all": "Odja tudu projetu",
+      "empty": "Inda ka ten projetu pa mostra."
     },
     "process": {
       "title_a": "Fiu a",
       "title_b": "fiu.",
-      "label": "Prusésu",
+      "label": "Prosesu",
       "step": "Etapa {{n}}",
       "steps": [
         {
           "t": "Diskubri",
-          "d": "Nu ta obi, nu ta piskiza i nu ta difini prublema sértu antis di dizenha."
+          "d": "Nu ta obi, nu ta piskiza i nu ta difini prublema sertu antis di dizenha."
         },
         {
           "t": "Dizenha",
-          "d": "Prototipus i sistema vizual, tistadu sedu i afinadu ku bo."
+          "d": "Prototipu i sistema vizual, tistadu sedu i afinadu ku bo."
         },
         {
           "t": "Konstrui",
-          "d": "Kódigu limpu, revistu i intregadu na siklus kurtu ki bu pode odja."
+          "d": "Kódigu limpu, revistu i entregadu na siklu kurtu ki bu pode odja."
         },
         {
           "t": "Lansa",
@@ -252,29 +252,29 @@
       "portfolio": "Odja portefóliu"
     },
     "cta": {
-      "label": "Prósimu prujetu",
+      "label": "Prósimu projetu",
       "title_a": "Nu ta tesi algun kuza",
       "title_b": "djuntu?"
     },
     "phases": [
       "Inísiu",
       "Manifestu",
-      "Sirvisus",
+      "Servisus",
       "Trabadju",
-      "Prusésu",
+      "Prosesu",
       "Ekipa",
       "Kontatu"
     ],
-    "phases_label": "Fases di pájina"
+    "phases_label": "Fazis di pájina"
   },
   "footer2": {
-    "studio": "Stúdiu",
-    "studio_place": "Praia, Santiagu",
+    "studio": "Estudiu",
+    "studio_place": "Praia, Santiago",
     "studio_country": "Kabu Verdi",
-    "clock": "Ora na Santiagu",
+    "clock": "Hora na Santiago",
     "socials": "Redis",
     "contact": "Kontatu",
     "nav": "Navegason",
-    "rights": "Tudu direitus rezervadu."
+    "rights": "Tudu direitu rezervadu."
   }
 }

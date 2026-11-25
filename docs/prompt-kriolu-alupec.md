@@ -191,6 +191,7 @@ Os verbos **não se conjugam**. O tempo é marcado por partículas antes do verb
 | de Santiago, e | di Santiago, i | preposições e conjunções do kriolu |
 | estúdio | estudiu | `o` final → `u`, sem acento |
 | parse | parsi | `e` final átono → `i` (parecer → parsi) |
+| dibagar | divagar | caso específico (a troca `v`/`b` ainda está por definir) |
 | irmã | irma | exceção: sem acento nem `n` |
 
 ---

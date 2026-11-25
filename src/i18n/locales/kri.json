@@ -197,14 +197,14 @@
       "label": "Estudiu dijital · Santiago, Kabu Verdi",
       "title_a": "Software ku",
       "title_b": "raiz.",
-      "lead": "Nu ta dizenha i nu ta konstrui produtus dijital ku kuidadu di kenha ki ta tesi un panu: fiu a fiu, sen présa di parse ku kes otu.",
+      "lead": "Nu ta dizenha i nu ta konstrui produtus dijital ku kuidadu di kenha ki ta tesi un panu: fiu a fiu, sen présa di parsi ku kes otu.",
       "cta_start": "Kumesa un projetu",
       "cta_work": "Odja nos trabadju",
       "scroll": "Fazi scroll"
     },
     "manifesto": {
       "label": "Manifestu",
-      "text": "Na Santiago, panu di téra ta fazedu *dibagar*, fiu a fiu, ti padron parse. Nu ta fazi software di mésmu manera: kada ekran, kada linha di kódigu i kada servidor *tesidu* ku intenson. Nu ta djunta design, injenharia i infraestrutura pa bu produtu ten *raiz* i aguenta *tempu.*"
+      "text": "Na Santiago, panu di téra ta fazedu *dibagar*, fiu a fiu, ti padron parsi. Nu ta fazi software di mésmu manera: kada ekran, kada linha di kódigu i kada servidor *tesidu* ku intenson. Nu ta djunta design, injenharia i infraestrutura pa bu produtu ten *raiz* i aguenta *tempu.*"
     },
     "services": {
       "title_a": "Kuzê ki nu ta",
